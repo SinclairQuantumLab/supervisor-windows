@@ -1,0 +1,16 @@
+; Supervisor config file for program(s)
+; copy this file into /etc/supervisor/conf.d/ folder
+
+; <APPNAME> will be the name of this app in supervisor
+; Replace all the <APPNAME> place holder, including the file name, with a desired name
+; Replace <USERNAME> with the computer account's name (i.e., imaq-pi01)
+; Replace <EXEPATH> with the executable file to run with supervisor
+
+[program:<APPNAME>] 
+command=<EXEPATH>
+environment=PYTHONUNBUFFERED=1 ; let stdout logged in real time for python app
+user=<USERNAME>
+autostart=true
+autorestart=true
+stdout_logfile=/etc/supervisor/logs/<APPNAME>_out.log
+stderr_logfile=/etc/supervisor/logs/<APPNAME>_err.log

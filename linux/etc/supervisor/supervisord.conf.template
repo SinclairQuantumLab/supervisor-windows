@@ -1,5 +1,6 @@
 ; 2025/03/10: Created by Joonseok Hur
-; supervisor config file for Sr3 use
+; 2025/03/10: Modifiled by Joonseok Hur
+; supervisor config file for Sinclair group
 ; copy it to the appropriate folder (e.g., /etc/supervisor/)
 ; For the first test after installing supervisor, disable [rpcinterface:multivisor] block below (by commenting out with semicolons)
 ; and uncomment it back after installing multivisor-rpc 
@@ -7,13 +8,13 @@
 
 [unix_http_server]
 file=/etc/supervisor/run/supervisor.sock
-chmod=0770  # Change from 0700 to 0770
-chown=root:users  # Change from root:root to root:users
+chmod=0770  ; Changed from 0700 to 0770
+chown=root:users  ; Changed from root:root to root:users
 
 [inet_http_server]  ; Enable Supervisor XML-RPC API
 port=127.0.0.1:9001
 username=admin
-password=698gang                 ; sockef file mode (default 0700)
+password=<PASSWORD> ; <--- UPDATE HERE!!     ; sockef file mode (default 0700)
 
 [supervisord]
 logfile=/etc/supervisor/logs/supervisord.log ; (main log file;default $CWD/supervisord.log)
