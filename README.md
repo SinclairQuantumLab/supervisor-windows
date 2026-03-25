@@ -64,8 +64,8 @@ Entering `exit` will let you go back to bash prompt.
 Download `/linux/etc/supervisor/` in the repo and copy the `supervisor` folder in the `/etc/` folder in the computer in which you want to install `supervisor`. 
 
 ```bash
-sudo mkdir /etc/supervisor
-sudo cp -r /path/to/repo/linux/etc/supervisor/. /etc/supervisor
+$ sudo mkdir /etc/supervisor
+$ sudo cp -r /path/to/repo/linux/etc/supervisor/. /etc/supervisor
 ```
 
 Make sure the `supervisor` folder contains all of the below:
@@ -118,11 +118,11 @@ $ sudo supervisorctl
 
 ### 4. Install `supervisord` as a `systemd` Service
 
-Copy `/linux/etc/systemd/system/supervisor.service.template` file in this repo into the computer's `/linux/systemd/system/` foler and drop `.template` extension.
+Copy `/linux/etc/systemd/system/supervisor.service.template` file in this repo into the computer's `/linux/etc/systemd/system/` foler and drop `.template` extension.
 
 ```bash
-sudo mkdir -p /etc/systemd/system/
-sudo cp -r /path/to/repo/linux/systemd/system/supervisor.service.template /etc/systemd/system/supervisor.service
+$ sudo mkdir -p /etc/systemd/system/
+$ sudo cp -r /path/to/repo/linux/etc/systemd/system/supervisor.service.template /etc/systemd/system/supervisor.service
 ```
 
 > **cf.** By default, the `.service` files for system-wide services are placed in `/lib/systemd/system/`, while the custom services in `/etc/systemd/system/` override the system-wide services.
@@ -130,7 +130,7 @@ sudo cp -r /path/to/repo/linux/systemd/system/supervisor.service.template /etc/s
 Open `supervisor.service` file and replace the `<VENVPATH>` placeholders with the path to the hidden `.venv/` folder in the installed `supervisor`'s folder.
 
 ```bash
-sudo nano /etc/systemd/system/supervisor.service
+$ sudo nano /etc/systemd/system/supervisor.service
 ```
 
 
