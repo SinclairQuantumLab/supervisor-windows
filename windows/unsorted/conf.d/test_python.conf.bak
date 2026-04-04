@@ -1,0 +1,44 @@
+[program:test_python_print]
+command="C:\supervisor\test_python_print.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_python_print_out.log
+stderr_logfile=C:/supervisor/logs/test_python_print_err.log
+;startsecs=5
+;stopwaitsecs=10
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+
+[program:test_python_print_cmd]
+command=C:\\Windows\\System32\\cmd.exe /c "C:\supervisor\test_python_print.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_python_print_cmd_out.log
+stderr_logfile=C:/supervisor/logs/test_python_print_cmd_err.log
+;startsecs=5
+;stopwaitsecs=10
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+[program:test_python_env]
+command=C:\\Users\\srgang\\AppData\\Local\\Programs\\Python\\Python310\\python.exe C:\\supervisor\\test_python_env.py
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_python_env_out.log
+stderr_logfile=C:/supervisor/logs/test_python_env_err.log
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+[program:test_python_env_batch]
+command="C:\supervisor\test_python_env.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_python_env_batch_out.log
+stderr_logfile=C:/supervisor/logs/test_python_env_batch_err.log
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+[program:test_python_env_cmd]
+command=C:\\Windows\\System32\\cmd.exe /c "C:\supervisor\test_python_env.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_python_env_cmd_out.log
+stderr_logfile=C:/supervisor/logs/test_python_env_cmd_err.log
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout

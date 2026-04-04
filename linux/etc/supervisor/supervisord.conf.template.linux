@@ -1,0 +1,47 @@
+; 2025/03/10: Created by Joonseok Hur
+; 2025/03/10: Modifiled by Joonseok Hur
+; supervisor config file for Sinclair group
+; copy it to the appropriate folder (e.g., /etc/supervisor/)
+; For the first test after installing supervisor, disable [rpcinterface:multivisor] block below (by commenting out with semicolons)
+; and uncomment it back after installing multivisor-rpc 
+; (e.g., `sudo python -m pip install multivisor[rpc] if supervisor was installed via `sudo apt install supervisor`).
+
+[unix_http_server]
+file=/etc/supervisor/run/supervisor.sock
+chmod=0770  ; Changed from 0700 to 0770
+chown=root:users  ; Changed from root:root to root:users
+
+[inet_http_server]  ; Enable Supervisor XML-RPC API
+port=127.0.0.1:9001
+username=admin
+password=<PASSWORD> ; <--- UPDATE HERE!!     ; sockef file mode (default 0700)
+
+[supervisord]
+logfile=/etc/supervisor/logs/supervisord.log ; (main log file;default $CWD/supervisord.log)
+pidfile=/etc/supervisor/run/supervisord.pid  ; (supervisord pidfile;default supervisord.pid)
+childlogdir=/etc/supervisor/logs             ; ('AUTO' child log dir, default $TEMP)
+
+; the below section must remain in the config file for RPC
+; (supervisorctl/web interface) to work, additional interfaces may be
+; added by defining them in separate rpcinterface: sections
+[rpcinterface:supervisor]
+supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+
+[supervisorctl]
+serverurl=unix:///etc/supervisor/run/supervisor.sock ; use a unix:// URL  for a unix socket
+
+; The [include] section can just contain the "files" setting.  This
+; setting can list multiple files (separated by whitespace or
+; newlines).  It can also contain wildcards.  The filenames are
+; interpreted as relative to this file.  Included files *cannot*
+; include files themselves.
+
+; To interface this supervisor with multivisor
+; https://github.com/tiagocoutinho/multivisor
+; Joon--adapted to load multivisor installed in a conda env
+; [rpcinterface:multivisor]
+; supervisor.rpcinterface_factory = multivisor.rpc:make_rpc_interface
+; bind=*:9002
+
+[include]
+files = /etc/supervisor/conf.d/*.conf

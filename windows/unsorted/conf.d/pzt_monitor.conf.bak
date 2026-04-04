@@ -1,0 +1,8 @@
+command=cmd /c "C:\Users\mayad\OneDrive\Desktop\PZT Monitor.bat"
+autostart=true
+autorestart=true
+;stderr_logfile=C:\supervisor\logs\my_script_err.log
+;stdout_logfile=C:\supervisor\logs\my_script_out.log
+;startsecs=5
+;stopwaitsecs=10
+environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout

@@ -1,0 +1,13 @@
+; Supervisor config file for program(s)
+; copy this file into /etc/supervisor/conf.d/ folder
+
+; <APPNAME> will be the name of this app in supervisor
+; Replace all the <APPNAME> place holder, including the file name, with a desired name
+; Replace <EXEPATH> with the executable file to run with supervisor
+
+[program:<APPNAME>] 
+command=<EXEPATH>
+autostart=true
+startsecs=5
+stdout_logfile=C:\supervisor\logs\<APPNAME>_out.log
+stderr_logfile=C:\supervisor\logs\<APPNAME>_err.log

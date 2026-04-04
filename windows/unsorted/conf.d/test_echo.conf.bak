@@ -1,0 +1,49 @@
+[program:test_echo]
+;command=python C:\path\to\my_script.py
+;To run the command as a specfic user
+;download PsTools from https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+;(which contain psexec.exe) and unzip it to C:\Windows\System32
+;command=psexec -u DOMAIN\Username -p UserPassword -d python C:\path\to\my_script.py
+;command=C:/supervisor/test_echo.bat
+command=C:\\supervisor\\test_echo.bat
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_echo_out.log
+stderr_logfile=C:/supervisor/logs/test_echo_err.log
+;startsecs=5
+;stopwaitsecs=10
+;environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+[program:test_echo_cmd]
+;command=python C:\path\to\my_script.py
+;To run the command as a specfic user
+;download PsTools from https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+;(which contain psexec.exe) and unzip it to C:\Windows\System32
+;command=psexec -u DOMAIN\Username -p UserPassword -d python C:\path\to\my_script.py
+command=C:\\Windows\\System32\\cmd.exe /c "C:\supervisor\test_echo.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_echo_out.log
+stderr_logfile=C:/supervisor/logs/test_echo_err.log
+;startsecs=5
+;stopwaitsecs=10
+;environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout
+
+
+[program:test_echo_args]
+command=C:\\Windows\\System32\\cmd.exe /c "C:\supervisor\echo_args.bat 111"
+
+[program:test_echo_space]
+;command=python C:\path\to\my_script.py
+;To run the command as a specfic user
+;download PsTools from https://learn.microsoft.com/en-us/sysinternals/downloads/psexec
+;(which contain psexec.exe) and unzip it to C:\Windows\System32
+;command=psexec -u DOMAIN\Username -p UserPassword -d python C:\path\to\my_script.py
+command="C:\supervisor\test echo.bat"
+autostart=true
+autorestart=false
+stdout_logfile=C:/supervisor/logs/test_echo_out.log
+stderr_logfile=C:/supervisor/logs/test_echo_err.log
+;startsecs=5
+;stopwaitsecs=10
+;environment=PYTHONUNBUFFERED=1  ; Ensure real-time stdout

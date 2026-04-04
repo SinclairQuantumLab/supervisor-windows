@@ -1,0 +1,14 @@
+; Supervisor config file to run python script
+; copy this file into /etc/supervisor/conf.d/ folder
+
+; <APPNAME> will be the name of this app in supervisor
+; Replace all the <APPNAME> place holder, including the file name, with a desired name
+; Replace <PYPATH> with the executable file to run with supervisor
+
+[program:<APPNAME>] 
+command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "<PYPATH>\Startup.ps1"
+environment=PYTHONUNBUFFERED=1 ; let stdout logged in real time for python app
+autostart=true
+autorestart=true
+stdout_logfile=C:\supervisor\logs\<APPNAME>_out.log
+stderr_logfile=C:\supervisor\logs\<APPNAME>_err.log

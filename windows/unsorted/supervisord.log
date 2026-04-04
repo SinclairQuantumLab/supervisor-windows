@@ -1,0 +1,1001 @@
+2025-03-03 23:38:19,630 WARN No file matches via include "C:\supervisor\conf.d\*.conf"
+2025-03-03 23:38:19,769 INFO RPC interface 'supervisor' initialized
+2025-03-03 23:38:19,769 INFO RPC interface 'multivisor' initialized
+2025-03-03 23:38:19,769 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-03 23:38:19,770 INFO supervisord started with pid 16000
+2025-03-03 23:54:49,628 WARN No file matches via include "C:\supervisor\conf.d\*.conf"
+2025-03-03 23:54:49,767 INFO RPC interface 'supervisor' initialized
+2025-03-03 23:54:49,767 INFO RPC interface 'multivisor' initialized
+2025-03-03 23:54:49,776 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-03 23:54:49,776 INFO supervisord started with pid 16432
+2025-03-03 23:55:17,131 WARN No file matches via include "C:\supervisor\conf.d\*.conf"
+2025-03-03 23:55:17,153 INFO RPC interface 'supervisor' initialized
+2025-03-03 23:55:17,153 INFO RPC interface 'multivisor' initialized
+2025-03-03 23:55:17,153 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-03 23:55:17,153 INFO supervisord started with pid 3008
+2025-03-04 10:05:30,787 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 10:05:30,912 INFO process group added: 'rigol_dsa'
+2025-03-04 10:05:30,922 INFO RPC interface 'supervisor' initialized
+2025-03-04 10:05:30,922 INFO RPC interface 'multivisor' initialized
+2025-03-04 10:05:30,922 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 10:05:30,923 INFO supervisord started with pid 13076
+2025-03-04 10:05:31,442 INFO supervisor: couldn't exec c:py.exe: ENOENT
+2025-03-04 10:05:31,442 INFO spawnerr: couldn't exec c:py.exe: ENOENT
+
+2025-03-04 10:05:31,442 INFO supervisor: child process was not spawned
+2025-03-04 10:05:31,442 INFO spawnerr: unknown error making dispatchers for 'rigol_dsa': pid (0)
+2025-03-04 10:05:33,465 INFO supervisor: couldn't exec c:py.exe: ENOENT
+2025-03-04 10:05:33,465 INFO spawnerr: couldn't exec c:py.exe: ENOENT
+
+2025-03-04 10:05:33,465 INFO supervisor: child process was not spawned
+2025-03-04 10:05:33,465 INFO spawnerr: unknown error making dispatchers for 'rigol_dsa': pid (0)
+2025-03-04 10:05:36,542 INFO supervisor: couldn't exec c:py.exe: ENOENT
+2025-03-04 10:05:36,542 INFO spawnerr: couldn't exec c:py.exe: ENOENT
+
+2025-03-04 10:05:36,542 INFO supervisor: child process was not spawned
+2025-03-04 10:05:36,542 INFO spawnerr: unknown error making dispatchers for 'rigol_dsa': pid (0)
+2025-03-04 10:05:40,626 INFO supervisor: couldn't exec c:py.exe: ENOENT
+2025-03-04 10:05:40,627 INFO spawnerr: couldn't exec c:py.exe: ENOENT
+
+2025-03-04 10:05:40,627 INFO supervisor: child process was not spawned
+2025-03-04 10:05:40,627 INFO spawnerr: unknown error making dispatchers for 'rigol_dsa': pid (0)
+2025-03-04 10:05:40,628 INFO gave up: rigol_dsa entered FATAL state, too many start retries too quickly
+2025-03-04 10:08:33,911 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 10:08:33,925 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 10:08:33,933 INFO RPC interface 'supervisor' initialized
+2025-03-04 10:08:33,934 INFO RPC interface 'multivisor' initialized
+2025-03-04 10:08:33,934 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 10:08:33,934 INFO supervisord started with pid 15248
+2025-03-04 10:08:34,450 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:08:36,489 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:08:39,558 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:08:43,659 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:08:43,660 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 10:09:51,744 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 10:09:51,757 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 10:09:51,766 INFO RPC interface 'supervisor' initialized
+2025-03-04 10:09:51,766 INFO RPC interface 'multivisor' initialized
+2025-03-04 10:09:51,766 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 10:09:51,766 INFO supervisord started with pid 15492
+2025-03-04 10:09:52,285 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:09:54,323 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:09:57,394 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:10:01,488 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:10:01,489 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 10:11:25,308 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 10:11:25,348 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 10:11:25,368 INFO RPC interface 'supervisor' initialized
+2025-03-04 10:11:25,368 INFO RPC interface 'multivisor' initialized
+2025-03-04 10:11:25,368 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 10:11:25,368 INFO supervisord started with pid 6036
+2025-03-04 10:11:25,898 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:11:27,928 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:11:30,969 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:11:35,040 INFO spawnerr: can't find command 'cmd'
+2025-03-04 10:11:35,040 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 10:48:51,849 WARN No file matches via include "C:\supervisor\conf.d\*.conf"
+2025-03-04 10:48:51,899 INFO RPC interface 'supervisor' initialized
+2025-03-04 10:48:51,899 INFO RPC interface 'multivisor' initialized
+2025-03-04 10:48:51,899 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 10:48:51,909 INFO supervisord started with pid 5024
+2025-03-04 19:38:34,008 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 19:38:34,140 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 19:38:34,150 INFO RPC interface 'supervisor' initialized
+2025-03-04 19:38:34,150 INFO RPC interface 'multivisor' initialized
+2025-03-04 19:38:34,150 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 19:38:34,151 INFO supervisord started with pid 5560
+2025-03-04 19:38:34,676 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:38:36,702 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:38:39,763 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:38:43,858 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:38:43,858 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 19:40:00,205 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 19:40:00,222 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 19:40:00,232 INFO RPC interface 'supervisor' initialized
+2025-03-04 19:40:00,232 INFO RPC interface 'multivisor' initialized
+2025-03-04 19:40:00,232 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 19:40:00,232 INFO supervisord started with pid 7248
+2025-03-04 19:40:00,757 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:40:02,799 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:40:05,872 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:40:09,941 INFO spawnerr: can't find command 'cmd'
+2025-03-04 19:40:09,941 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 19:50:07,787 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 19:50:07,802 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 19:50:07,810 INFO RPC interface 'supervisor' initialized
+2025-03-04 19:50:07,811 INFO RPC interface 'multivisor' initialized
+2025-03-04 19:50:07,811 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 19:50:07,811 INFO supervisord started with pid 11796
+2025-03-04 19:50:08,337 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-04 19:50:10,370 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-04 19:50:13,449 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-04 19:50:17,538 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-04 19:50:17,538 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-04 19:51:37,208 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-04 19:51:37,222 INFO process group added: 'rigol_dsa_monitor'
+2025-03-04 19:51:37,231 INFO RPC interface 'supervisor' initialized
+2025-03-04 19:51:37,231 INFO RPC interface 'multivisor' initialized
+2025-03-04 19:51:37,231 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-04 19:51:37,231 INFO supervisord started with pid 3908
+2025-03-04 19:51:37,744 INFO spawnerr: can't find command "C:\\Windows\\System32\\cmd.exe /c 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'"
+2025-03-04 19:51:39,795 INFO spawnerr: can't find command "C:\\Windows\\System32\\cmd.exe /c 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'"
+2025-03-04 19:51:42,861 INFO spawnerr: can't find command "C:\\Windows\\System32\\cmd.exe /c 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'"
+2025-03-04 19:51:46,947 INFO spawnerr: can't find command "C:\\Windows\\System32\\cmd.exe /c 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'"
+2025-03-04 19:51:46,947 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 15:42:44,975 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 15:42:45,116 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 15:42:45,127 INFO RPC interface 'supervisor' initialized
+2025-03-05 15:42:45,127 INFO RPC interface 'multivisor' initialized
+2025-03-05 15:42:45,127 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 15:42:45,128 INFO supervisord started with pid 13484
+2025-03-05 15:42:45,654 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:45:34,394 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 15:45:34,408 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 15:45:34,416 INFO RPC interface 'supervisor' initialized
+2025-03-05 15:45:34,417 INFO RPC interface 'multivisor' initialized
+2025-03-05 15:45:34,417 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 15:45:34,417 INFO supervisord started with pid 7088
+2025-03-05 15:45:34,937 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:45:36,988 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:50:11,671 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 15:50:11,685 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 15:50:11,695 INFO RPC interface 'supervisor' initialized
+2025-03-05 15:50:11,695 INFO RPC interface 'multivisor' initialized
+2025-03-05 15:50:11,695 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 15:50:11,695 INFO supervisord started with pid 7064
+2025-03-05 15:50:12,227 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:51:46,831 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 15:51:46,846 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 15:51:46,854 INFO RPC interface 'supervisor' initialized
+2025-03-05 15:51:46,855 INFO RPC interface 'multivisor' initialized
+2025-03-05 15:51:46,855 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 15:51:46,855 INFO supervisord started with pid 9136
+2025-03-05 15:51:47,370 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:55:49,319 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 15:55:49,334 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 15:55:49,343 INFO RPC interface 'supervisor' initialized
+2025-03-05 15:55:49,343 INFO RPC interface 'multivisor' initialized
+2025-03-05 15:55:49,343 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 15:55:49,344 INFO supervisord started with pid 9024
+2025-03-05 15:55:49,867 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:55:51,920 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:55:54,997 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:55:59,069 INFO spawnerr: can't find command 'cmd'
+2025-03-05 15:55:59,069 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:01:05,071 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:01:05,085 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:01:05,094 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:01:05,094 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:01:05,094 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:01:05,094 INFO supervisord started with pid 1372
+2025-03-05 16:01:05,613 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:01:07,651 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:01:10,717 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:01:14,798 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:01:14,798 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:03:44,214 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:03:44,231 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:03:44,240 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:03:44,241 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:03:44,241 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:03:44,241 INFO supervisord started with pid 13300
+2025-03-05 16:03:44,765 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:03:46,806 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:05:27,638 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:05:27,653 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:05:27,661 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:05:27,661 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:05:27,661 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:05:27,662 INFO supervisord started with pid 11896
+2025-03-05 16:05:28,187 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:05:51,135 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:05:51,150 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:05:51,160 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:05:51,160 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:05:51,160 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:05:51,160 INFO supervisord started with pid 12496
+2025-03-05 16:05:51,679 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:05:53,720 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:08:14,242 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:08:14,256 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:08:14,264 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:08:14,264 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:08:14,264 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:08:14,264 INFO supervisord started with pid 10628
+2025-03-05 16:08:14,780 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:10:10,042 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:10:10,057 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:10:10,066 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:10:10,066 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:10:10,066 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:10:10,067 INFO supervisord started with pid 11052
+2025-03-05 16:10:10,580 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:10:12,623 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:10:56,203 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:10:56,219 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:10:56,228 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:10:56,228 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:10:56,228 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:10:56,228 INFO supervisord started with pid 2776
+2025-03-05 16:10:56,753 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:10:58,795 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:13:53,249 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:13:53,263 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:13:53,273 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:13:53,273 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:13:53,273 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:13:53,273 INFO supervisord started with pid 8248
+2025-03-05 16:13:53,790 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:13:55,836 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:16:01,623 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:16:01,638 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:16:01,646 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:16:01,646 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:16:01,647 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:16:01,647 INFO supervisord started with pid 11672
+2025-03-05 16:16:02,171 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:19:19,727 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:19:19,742 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:19:19,751 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:19:19,751 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:19:19,751 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:19:19,752 INFO supervisord started with pid 11740
+2025-03-05 16:19:20,278 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:19:22,318 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:21:36,728 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:21:36,742 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:21:36,750 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:21:36,750 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:21:36,750 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:21:36,751 INFO supervisord started with pid 3772
+2025-03-05 16:21:37,278 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:21:39,302 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:21:42,353 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:21:46,441 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:21:46,441 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:25:12,612 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:25:12,628 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:25:12,635 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:25:12,635 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:25:12,636 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:25:12,636 INFO supervisord started with pid 11336
+2025-03-05 16:25:13,155 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:25:15,207 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:25:18,265 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:25:22,344 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:25:22,344 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:28:36,634 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:28:36,651 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:28:36,661 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:28:36,661 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:28:36,661 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:28:36,661 INFO supervisord started with pid 9428
+2025-03-05 16:28:37,187 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:39,219 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:46,538 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:28:46,552 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:28:46,559 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:28:46,559 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:28:46,559 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:28:46,560 INFO supervisord started with pid 4704
+2025-03-05 16:28:47,082 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:49,124 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:52,201 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:56,293 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:28:56,294 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:35:26,595 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:35:26,609 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:35:26,618 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:35:26,618 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:35:26,618 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:35:26,618 INFO supervisord started with pid 7452
+2025-03-05 16:35:27,131 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:29,162 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:32,213 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:36,314 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:36,314 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:35:47,598 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:35:47,612 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:35:47,619 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:35:47,619 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:35:47,619 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:35:47,620 INFO supervisord started with pid 7552
+2025-03-05 16:35:48,143 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:50,183 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:53,258 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:57,344 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:35:57,344 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:36:53,912 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 16:38:43,548 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:38:43,563 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:38:43,571 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:38:43,571 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:38:43,571 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:38:43,572 INFO supervisord started with pid 11724
+2025-03-05 16:38:44,084 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:38:46,130 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:38:49,187 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:38:53,284 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:38:53,284 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:40:58,836 INFO configuration reloaded (added: ['test_echo'] changed: [] removed: [])
+2025-03-05 16:41:07,168 INFO configuration reloaded (added: ['test_echo'] changed: [] removed: [])
+2025-03-05 16:41:07,679 INFO process group added: 'test_echo'
+2025-03-05 16:41:08,192 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:41:09,732 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:41:12,794 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:41:16,892 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:41:16,892 INFO gave up: test_echo entered FATAL state, too many start retries too quickly
+2025-03-05 16:43:14,040 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:43:14,040 INFO Included extra file "C:\supervisor\conf.d\test_echo.conf" during parsing
+2025-03-05 16:43:14,055 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:43:14,055 INFO process group added: 'test_echo'
+2025-03-05 16:43:14,063 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:43:14,063 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:43:14,063 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:43:14,064 INFO supervisord started with pid 10436
+2025-03-05 16:43:14,581 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:14,583 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:16,627 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:16,630 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:19,704 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:19,709 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:23,729 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:23,729 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:43:23,731 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:43:23,731 INFO gave up: test_echo entered FATAL state, too many start retries too quickly
+2025-03-05 16:46:35,124 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 16:46:35,124 INFO Included extra file "C:\supervisor\conf.d\test_echo.conf" during parsing
+2025-03-05 16:46:35,137 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 16:46:35,137 INFO process group added: 'test_echo'
+2025-03-05 16:46:35,146 INFO RPC interface 'supervisor' initialized
+2025-03-05 16:46:35,146 INFO RPC interface 'multivisor' initialized
+2025-03-05 16:46:35,146 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 16:46:35,146 INFO supervisord started with pid 12244
+2025-03-05 16:46:35,668 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:46:35,704 INFO Spawned: 'test_echo' with pid 9040
+2025-03-05 16:46:36,721 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 16:46:37,748 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:46:40,810 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:46:44,884 INFO spawnerr: can't find command 'cmd'
+2025-03-05 16:46:44,884 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 16:48:00,698 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 16:48:10,901 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 16:48:11,410 INFO waiting for test_echo to stop
+2025-03-05 16:48:11,925 WARN stopped: test_echo (exit status 1)
+2025-03-05 16:48:12,946 INFO process group removed: 'test_echo'
+2025-03-05 16:48:13,460 INFO process group added: 'test_echo'
+2025-03-05 16:48:13,978 INFO Spawned: 'test_echo' with pid 12528
+2025-03-05 16:48:14,486 WARN exited: test_echo (exit status 1; not expected)
+2025-03-05 16:48:16,537 INFO Spawned: 'test_echo' with pid 7860
+2025-03-05 16:48:17,555 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 16:48:17,556 WARN exited: test_echo (exit status 1; not expected)
+2025-03-05 16:50:23,277 INFO Spawned: 'test_echo' with pid 10468
+2025-03-05 16:50:23,792 WARN exited: test_echo (exit status 1; not expected)
+2025-03-05 16:50:25,336 ERRO subprocess job add: (5, 'AssignProcessToJobObject', 'Access is denied.')
+2025-03-05 16:50:25,336 INFO Spawned: 'test_echo' with pid 5288
+2025-03-05 16:50:25,337 WARN exited: test_echo (exit status 1; not expected)
+2025-03-05 16:50:28,396 INFO Spawned: 'test_echo' with pid 13080
+2025-03-05 16:50:29,420 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 16:50:29,421 WARN exited: test_echo (exit status 1; not expected)
+2025-03-05 17:00:49,249 INFO configuration reloaded (added: ['test_echo_cmd'] changed: ['test_echo'] removed: [])
+2025-03-05 17:00:55,576 INFO configuration reloaded (added: ['test_echo_cmd'] changed: ['test_echo'] removed: [])
+2025-03-05 17:00:56,597 INFO process group removed: 'test_echo'
+2025-03-05 17:00:57,100 INFO process group added: 'test_echo'
+2025-03-05 17:00:57,615 INFO process group added: 'test_echo_cmd'
+2025-03-05 17:00:57,644 INFO Spawned: 'test_echo' with pid 7204
+2025-03-05 17:00:58,179 INFO Spawned: 'test_echo_cmd' with pid 3996
+2025-03-05 17:00:58,684 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:00:58,685 WARN exited: test_echo_cmd (exit status 1; not expected)
+2025-03-05 17:01:00,703 INFO Spawned: 'test_echo_cmd' with pid 10032
+2025-03-05 17:01:01,720 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:01:01,721 WARN exited: test_echo_cmd (exit status 1; not expected)
+2025-03-05 17:02:31,507 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:02:37,653 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:02:38,679 INFO process group removed: 'test_echo_cmd'
+2025-03-05 17:02:39,194 INFO process group added: 'test_echo_cmd'
+2025-03-05 17:02:39,711 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:02:41,247 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:02:44,304 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:02:48,384 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:02:48,384 INFO gave up: test_echo_cmd entered FATAL state, too many start retries too quickly
+2025-03-05 17:03:08,782 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:03:29,197 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:03:30,219 INFO process group removed: 'test_echo_cmd'
+2025-03-05 17:03:30,731 INFO process group added: 'test_echo_cmd'
+2025-03-05 17:03:31,253 INFO Spawned: 'test_echo_cmd' with pid 10516
+2025-03-05 17:03:32,772 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:03:57,309 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:04:02,699 INFO configuration reloaded (added: [] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 17:04:03,209 INFO waiting for test_echo_cmd to stop
+2025-03-05 17:04:03,721 WARN stopped: test_echo_cmd (exit status 1)
+2025-03-05 17:04:04,746 INFO process group removed: 'test_echo_cmd'
+2025-03-05 17:04:05,256 INFO process group added: 'test_echo_cmd'
+2025-03-05 17:04:05,779 INFO Spawned: 'test_echo_cmd' with pid 3232
+2025-03-05 17:04:07,305 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:05:20,878 INFO configuration reloaded (added: ['rigol_dsa_monitor_cmd'] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:05:25,081 INFO configuration reloaded (added: ['rigol_dsa_monitor_cmd'] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:05:26,108 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:05:26,617 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:05:27,132 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:05:27,134 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:05:27,657 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 14052
+2025-03-05 17:05:28,168 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:05:29,171 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:05:30,191 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 13076
+2025-03-05 17:05:31,216 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:05:31,217 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:05:32,244 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:05:36,326 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:05:36,327 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:12:11,784 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:12:17,899 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:12:18,918 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:12:19,433 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:12:19,966 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 9808
+2025-03-05 17:12:20,475 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:12:22,527 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 12900
+2025-03-05 17:12:23,542 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:12:23,545 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:13:18,669 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:13:27,107 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:13:28,126 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:13:28,638 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:13:29,151 INFO spawnerr: can't find command '"C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:13:29,655 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:13:30,167 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:13:30,683 INFO spawnerr: can't find command '"C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:13:30,691 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 10696
+2025-03-05 17:13:30,700 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:13:32,227 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 9448
+2025-03-05 17:13:33,246 INFO spawnerr: can't find command '"C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:13:33,246 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:13:33,247 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:13:37,327 INFO spawnerr: can't find command '"C:/Users/mayad/OneDrive/Desktop/Rigol'
+2025-03-05 17:13:37,327 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:16:22,281 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:16:23,299 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:16:23,814 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:16:24,321 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:16:24,835 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:16:25,345 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:16:25,859 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:16:25,861 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:16:27,401 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:16:28,421 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:16:29,921 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 17:16:30,435 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:16:32,993 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:16:32,993 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:16:34,012 INFO spawnerr: can't find command 'C:WindowsSystem32cmd.exe'
+2025-03-05 17:16:34,012 INFO gave up: rigol_dsa_monitor_cmd entered FATAL state, too many start retries too quickly
+2025-03-05 17:16:39,135 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 17:17:36,014 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:17:42,129 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 17:17:43,145 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:17:43,658 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:17:44,174 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:17:44,684 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:17:45,191 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 17:17:45,702 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:17:45,720 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 11016
+2025-03-05 17:17:46,225 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:17:48,263 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:17:48,267 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 3668
+2025-03-05 17:17:49,283 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 17:17:49,284 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 17:17:52,360 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:17:52,361 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:21:43,140 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:21:50,773 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:21:51,789 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:21:52,302 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:21:52,812 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:21:54,340 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:21:57,393 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:22:01,457 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:22:01,458 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:29:44,380 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:29:51,535 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:29:52,554 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:29:53,068 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:29:53,579 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat^'
+2025-03-05 17:29:55,113 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat^'
+2025-03-05 17:29:58,176 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat^'
+2025-03-05 17:30:02,267 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat^'
+2025-03-05 17:30:02,267 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:30:40,917 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:30:45,006 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:30:46,019 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:30:46,529 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:30:47,038 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol^'
+2025-03-05 17:30:48,574 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol^'
+2025-03-05 17:30:51,643 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol^'
+2025-03-05 17:30:55,734 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol^'
+2025-03-05 17:30:55,734 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:31:13,578 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:31:17,673 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:31:18,682 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:31:19,195 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:31:19,706 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:31:21,238 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:31:24,302 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:31:27,888 INFO spawnerr: can't find command '^C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:31:27,888 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:47:37,025 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 17:48:01,876 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 17:48:16,169 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 17:48:16,685 INFO waiting for test_echo to stop
+2025-03-05 17:48:17,195 WARN stopped: test_echo (exit status 1)
+2025-03-05 17:48:18,219 INFO process group removed: 'test_echo'
+2025-03-05 17:48:18,736 INFO process group added: 'test_echo'
+2025-03-05 17:48:19,251 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 17:48:20,780 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 17:48:23,857 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 17:48:27,932 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 17:48:27,933 INFO gave up: test_echo entered FATAL state, too many start retries too quickly
+2025-03-05 17:50:29,320 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:50:53,814 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:50:54,835 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:50:55,347 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:50:55,860 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:50:57,401 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:51:00,459 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:51:04,522 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol'
+2025-03-05 17:51:04,523 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:52:33,456 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:52:38,555 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:52:39,575 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:52:40,081 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:52:40,595 INFO spawnerr: can't find command 'C:UsersmayadOneDriveDesktopRigol'
+2025-03-05 17:52:42,131 INFO spawnerr: can't find command 'C:UsersmayadOneDriveDesktopRigol'
+2025-03-05 17:52:45,204 INFO spawnerr: can't find command 'C:UsersmayadOneDriveDesktopRigol'
+2025-03-05 17:52:48,768 INFO spawnerr: can't find command 'C:UsersmayadOneDriveDesktopRigol'
+2025-03-05 17:52:48,769 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:53:12,444 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:53:17,525 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:53:18,552 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:53:19,067 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:53:19,578 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:53:21,105 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:53:24,173 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:53:28,242 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:53:28,242 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:54:08,098 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:54:09,117 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:54:09,629 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:54:10,133 INFO spawnerr: can't find command 'C:\\\\Users\\\\mayad\\\\OneDrive\\\\Desktop\\\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:11,673 INFO spawnerr: can't find command 'C:\\\\Users\\\\mayad\\\\OneDrive\\\\Desktop\\\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:14,748 INFO spawnerr: can't find command 'C:\\\\Users\\\\mayad\\\\OneDrive\\\\Desktop\\\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:18,318 INFO spawnerr: can't find command 'C:\\\\Users\\\\mayad\\\\OneDrive\\\\Desktop\\\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:18,318 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:54:50,775 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:54:51,785 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:54:52,299 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:54:52,809 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:54,335 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:54:57,386 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:01,472 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:01,473 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:55:33,038 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:55:34,060 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:55:34,575 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:55:35,089 INFO spawnerr: can't find command 'C:^\\Users^\\mayad^\\OneDrive^\\Desktop^\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:36,626 INFO spawnerr: can't find command 'C:^\\Users^\\mayad^\\OneDrive^\\Desktop^\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:39,696 INFO spawnerr: can't find command 'C:^\\Users^\\mayad^\\OneDrive^\\Desktop^\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:43,272 INFO spawnerr: can't find command 'C:^\\Users^\\mayad^\\OneDrive^\\Desktop^\\Rigol DSA Monitor.bat'
+2025-03-05 17:55:43,273 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:56:07,800 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:56:08,814 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:56:09,327 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:56:09,830 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:11,360 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:14,606 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:18,194 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:18,194 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:56:39,912 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:56:40,933 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:56:41,444 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:56:41,960 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:43,486 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:46,781 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:50,861 INFO spawnerr: can't find command 'C:/Users/mayad/OneDrive/Desktop/Rigol DSA Monitor.bat'
+2025-03-05 17:56:50,862 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 17:59:16,259 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 17:59:17,276 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 17:59:17,784 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 17:59:18,292 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol\\ DSA\\ Monitor.bat'
+2025-03-05 17:59:19,822 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol\\ DSA\\ Monitor.bat'
+2025-03-05 17:59:22,881 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol\\ DSA\\ Monitor.bat'
+2025-03-05 17:59:26,967 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol\\ DSA\\ Monitor.bat'
+2025-03-05 17:59:26,967 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 18:14:53,893 INFO configuration reloaded (added: ['test_cmd'] changed: [] removed: [])
+2025-03-05 18:14:54,397 INFO process group added: 'test_cmd'
+2025-03-05 18:14:54,910 INFO spawnerr: can't find command 'cmd'
+2025-03-05 18:14:56,442 INFO spawnerr: can't find command 'cmd'
+2025-03-05 18:14:59,508 INFO spawnerr: can't find command 'cmd'
+2025-03-05 18:15:03,597 INFO spawnerr: can't find command 'cmd'
+2025-03-05 18:15:03,597 INFO gave up: test_cmd entered FATAL state, too many start retries too quickly
+2025-03-05 18:24:41,173 INFO configuration reloaded (added: ['test_echo_args'] changed: ['test_echo'] removed: [])
+2025-03-05 18:24:42,201 INFO process group removed: 'test_echo'
+2025-03-05 18:24:42,717 INFO process group added: 'test_echo'
+2025-03-05 18:24:43,232 INFO process group added: 'test_echo_args'
+2025-03-05 18:24:43,241 INFO Spawned: 'test_echo' with pid 1792
+2025-03-05 18:24:43,744 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 18:24:44,253 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:24:45,269 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 18:24:48,488 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 18:24:52,577 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c ""C:\\supervisor\\echo_args.bat" "C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat"""': No closing quotation
+2025-03-05 18:24:52,577 INFO gave up: test_echo_args entered FATAL state, too many start retries too quickly
+2025-03-05 18:25:25,215 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 18:25:25,725 INFO waiting for test_echo to stop
+2025-03-05 18:25:26,238 WARN stopped: test_echo (exit status 1)
+2025-03-05 18:25:27,249 INFO process group removed: 'test_echo'
+2025-03-05 18:25:27,761 INFO process group added: 'test_echo'
+2025-03-05 18:25:28,278 INFO spawnerr: can't find command 'C:supervisortest_echo.bat'
+2025-03-05 18:25:29,805 INFO spawnerr: can't find command 'C:supervisortest_echo.bat'
+2025-03-05 18:25:32,868 INFO spawnerr: can't find command 'C:supervisortest_echo.bat'
+2025-03-05 18:25:37,071 INFO spawnerr: can't find command 'C:supervisortest_echo.bat'
+2025-03-05 18:25:37,071 INFO gave up: test_echo entered FATAL state, too many start retries too quickly
+2025-03-05 18:26:24,479 INFO configuration reloaded (added: [] changed: ['test_echo'] removed: [])
+2025-03-05 18:26:25,500 INFO process group removed: 'test_echo'
+2025-03-05 18:26:26,011 INFO process group added: 'test_echo'
+2025-03-05 18:26:26,533 INFO Spawned: 'test_echo' with pid 2856
+2025-03-05 18:26:28,062 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:36:39,784 INFO configuration reloaded (added: [] changed: ['test_echo_args'] removed: [])
+2025-03-05 18:36:40,802 INFO process group removed: 'test_echo_args'
+2025-03-05 18:36:41,307 INFO process group added: 'test_echo_args'
+2025-03-05 18:36:41,818 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c "C:\\\\supervisor\\\\echo_args.bat" "111""': No closing quotation
+2025-03-05 18:36:43,356 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c "C:\\\\supervisor\\\\echo_args.bat" "111""': No closing quotation
+2025-03-05 18:36:46,405 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c "C:\\\\supervisor\\\\echo_args.bat" "111""': No closing quotation
+2025-03-05 18:36:49,978 INFO spawnerr: can't parse command 'C:\\\\Windows\\\\System32\\\\cmd.exe /c "C:\\\\supervisor\\\\echo_args.bat" "111""': No closing quotation
+2025-03-05 18:36:49,978 INFO gave up: test_echo_args entered FATAL state, too many start retries too quickly
+2025-03-05 18:37:30,566 INFO configuration reloaded (added: [] changed: ['test_echo_args'] removed: [])
+2025-03-05 18:37:31,585 INFO process group removed: 'test_echo_args'
+2025-03-05 18:37:32,099 INFO process group added: 'test_echo_args'
+2025-03-05 18:37:32,632 INFO Spawned: 'test_echo_args' with pid 13568
+2025-03-05 18:37:34,166 INFO success: test_echo_args entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:39:43,528 INFO configuration reloaded (added: ['test_echo_space'] changed: ['test_echo_cmd'] removed: [])
+2025-03-05 18:39:44,043 INFO waiting for test_echo_cmd to stop
+2025-03-05 18:39:44,552 WARN stopped: test_echo_cmd (exit status 1)
+2025-03-05 18:39:45,581 INFO process group removed: 'test_echo_cmd'
+2025-03-05 18:39:46,092 INFO process group added: 'test_echo_cmd'
+2025-03-05 18:39:46,607 INFO process group added: 'test_echo_space'
+2025-03-05 18:39:46,617 INFO Spawned: 'test_echo_cmd' with pid 13188
+2025-03-05 18:39:47,149 INFO Spawned: 'test_echo_space' with pid 10600
+2025-03-05 18:39:47,668 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:39:48,686 INFO success: test_echo_space entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:40:43,532 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 18:40:44,551 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 18:40:45,064 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 18:40:45,575 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 18:40:47,098 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 18:40:50,146 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 18:40:53,718 INFO spawnerr: can't find command 'C:\\Users\\mayad\\OneDrive\\Desktop\\Rigol DSA Monitor.bat'
+2025-03-05 18:40:53,718 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 18:44:50,042 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor', 'rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 18:44:51,058 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 18:44:51,573 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 18:44:52,110 INFO Spawned: 'rigol_dsa_monitor' with pid 780
+2025-03-05 18:44:52,626 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 18:44:53,135 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 18:44:53,137 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:44:53,661 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 11864
+2025-03-05 18:44:54,176 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 18:44:56,229 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 1332
+2025-03-05 18:44:56,740 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 18:44:59,298 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 12252
+2025-03-05 18:44:59,808 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 18:45:03,380 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 4560
+2025-03-05 18:45:04,405 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:45:04,406 WARN exited: rigol_dsa_monitor_cmd (exit status 1; not expected)
+2025-03-05 18:45:35,389 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 18:47:35,974 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 18:48:19,056 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor_cmd'] removed: [])
+2025-03-05 18:48:20,072 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 18:48:20,588 INFO process group added: 'rigol_dsa_monitor_cmd'
+2025-03-05 18:48:21,107 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 14312
+2025-03-05 18:48:22,636 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:52:01,988 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 18:58:42,254 INFO configuration reloaded (added: ['test_python_print', 'test_python_print_cmd'] changed: [] removed: [])
+2025-03-05 18:58:42,768 INFO process group added: 'test_python_print'
+2025-03-05 18:58:43,272 INFO process group added: 'test_python_print_cmd'
+2025-03-05 18:58:43,297 INFO Spawned: 'test_python_print' with pid 9772
+2025-03-05 18:58:43,818 INFO spawnerr: can't find command 'C:\\Windows\\System32\\cmd.exe /c C:\\supervisor\\test_python_print.bat'
+2025-03-05 18:58:43,828 WARN exited: test_python_print (exit status 2; not expected)
+2025-03-05 18:58:45,359 INFO Spawned: 'test_python_print' with pid 3300
+2025-03-05 18:58:45,359 INFO spawnerr: can't find command 'C:\\Windows\\System32\\cmd.exe /c C:\\supervisor\\test_python_print.bat'
+2025-03-05 18:58:46,366 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 18:58:46,367 WARN exited: test_python_print (exit status 2; not expected)
+2025-03-05 18:58:48,425 INFO spawnerr: can't find command 'C:\\Windows\\System32\\cmd.exe /c C:\\supervisor\\test_python_print.bat'
+2025-03-05 18:58:52,644 INFO spawnerr: can't find command 'C:\\Windows\\System32\\cmd.exe /c C:\\supervisor\\test_python_print.bat'
+2025-03-05 18:58:52,645 INFO gave up: test_python_print_cmd entered FATAL state, too many start retries too quickly
+2025-03-05 19:00:53,367 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:01:44,873 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:03:04,764 INFO configuration reloaded (added: [] changed: ['test_python_print_cmd'] removed: [])
+2025-03-05 19:03:05,776 INFO process group removed: 'test_python_print_cmd'
+2025-03-05 19:03:06,286 INFO process group added: 'test_python_print_cmd'
+2025-03-05 19:03:06,808 INFO Spawned: 'test_python_print_cmd' with pid 3672
+2025-03-05 19:03:07,312 WARN exited: test_python_print_cmd (termination normal; not expected)
+2025-03-05 19:03:09,360 INFO Spawned: 'test_python_print_cmd' with pid 14144
+2025-03-05 19:03:09,932 WARN exited: test_python_print_cmd (termination normal; not expected)
+2025-03-05 19:03:12,479 INFO Spawned: 'test_python_print_cmd' with pid 9036
+2025-03-05 19:03:12,992 WARN exited: test_python_print_cmd (termination normal; not expected)
+2025-03-05 19:03:16,565 INFO Spawned: 'test_python_print_cmd' with pid 6616
+2025-03-05 19:03:17,585 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:03:17,586 INFO exited: test_python_print_cmd (termination normal; expected)
+2025-03-05 19:06:05,372 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:06:29,829 INFO Spawned: 'test_python_print_cmd' with pid 11676
+2025-03-05 19:06:30,922 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:06:40,124 INFO exited: test_python_print_cmd (termination normal; expected)
+2025-03-05 19:07:25,053 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:08:12,149 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:08:25,196 INFO Spawned: 'test_python_print_cmd' with pid 2620
+2025-03-05 19:08:26,419 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:08:48,105 INFO configuration reloaded (added: [] changed: [] removed: [])
+2025-03-05 19:09:10,622 INFO waiting for test_echo to stop
+2025-03-05 19:09:10,622 INFO waiting for test_echo_args to stop
+2025-03-05 19:09:10,622 INFO waiting for test_echo_cmd to stop
+2025-03-05 19:09:10,622 INFO waiting for test_echo_space to stop
+2025-03-05 19:09:10,622 INFO waiting for rigol_dsa_monitor to stop
+2025-03-05 19:09:10,622 INFO waiting for rigol_dsa_monitor_cmd to stop
+2025-03-05 19:09:10,622 INFO waiting for test_python_print_cmd to stop
+2025-03-05 19:09:10,622 WARN stopped: test_python_print_cmd (exit status 1)
+2025-03-05 19:09:11,131 WARN stopped: test_echo (exit status 1)
+2025-03-05 19:09:11,131 WARN stopped: test_echo_args (exit status 1)
+2025-03-05 19:09:11,132 WARN stopped: test_echo_cmd (exit status 1)
+2025-03-05 19:09:11,132 WARN stopped: test_echo_space (exit status 1)
+2025-03-05 19:09:11,132 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-05 19:09:11,132 WARN stopped: rigol_dsa_monitor_cmd (exit status 1)
+2025-03-05 19:09:22,925 INFO Spawned: 'test_echo' with pid 10272
+2025-03-05 19:09:22,929 INFO Spawned: 'test_echo_args' with pid 5088
+2025-03-05 19:09:22,932 INFO Spawned: 'test_echo_cmd' with pid 3020
+2025-03-05 19:09:22,947 INFO Spawned: 'test_echo_space' with pid 12892
+2025-03-05 19:09:22,952 INFO Spawned: 'rigol_dsa_monitor' with pid 2728
+2025-03-05 19:09:22,956 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 12100
+2025-03-05 19:09:22,978 INFO Spawned: 'test_python_print' with pid 12948
+2025-03-05 19:09:22,982 INFO Spawned: 'test_python_print_cmd' with pid 12844
+2025-03-05 19:09:24,003 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,004 INFO success: test_echo_args entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,004 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,005 INFO success: test_echo_space entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,005 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,005 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,006 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:09:24,006 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:10:06,840 INFO configuration reloaded (added: [] changed: ['test_python_print', 'test_python_print_cmd'] removed: [])
+2025-03-05 19:10:07,343 INFO waiting for test_python_print to stop
+2025-03-05 19:10:07,853 WARN stopped: test_python_print (exit status 1)
+2025-03-05 19:10:08,880 INFO process group removed: 'test_python_print'
+2025-03-05 19:10:09,394 INFO process group added: 'test_python_print'
+2025-03-05 19:10:09,909 INFO waiting for test_python_print_cmd to stop
+2025-03-05 19:10:09,916 INFO Spawned: 'test_python_print' with pid 11496
+2025-03-05 19:10:09,918 WARN stopped: test_python_print_cmd (exit status 1)
+2025-03-05 19:10:10,930 INFO process group removed: 'test_python_print_cmd'
+2025-03-05 19:10:10,931 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:10:11,442 INFO process group added: 'test_python_print_cmd'
+2025-03-05 19:10:11,957 INFO Spawned: 'test_python_print_cmd' with pid 3468
+2025-03-05 19:10:13,489 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:10:56,134 INFO waiting for test_python_print_cmd to stop
+2025-03-05 19:10:56,367 WARN stopped: test_python_print_cmd (exit status 1)
+2025-03-05 19:10:56,822 INFO Spawned: 'test_python_print_cmd' with pid 13492
+2025-03-05 19:10:58,416 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:11:08,616 INFO configuration reloaded (added: [] changed: ['test_python_print', 'test_python_print_cmd'] removed: [])
+2025-03-05 19:11:09,120 INFO waiting for test_python_print to stop
+2025-03-05 19:11:09,632 WARN stopped: test_python_print (exit status 1)
+2025-03-05 19:11:10,643 INFO process group removed: 'test_python_print'
+2025-03-05 19:11:11,152 INFO process group added: 'test_python_print'
+2025-03-05 19:11:11,667 INFO waiting for test_python_print_cmd to stop
+2025-03-05 19:11:11,700 INFO Spawned: 'test_python_print' with pid 4756
+2025-03-05 19:11:11,701 WARN stopped: test_python_print_cmd (exit status 1)
+2025-03-05 19:11:12,724 INFO process group removed: 'test_python_print_cmd'
+2025-03-05 19:11:12,725 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:11:13,236 INFO process group added: 'test_python_print_cmd'
+2025-03-05 19:11:13,752 INFO Spawned: 'test_python_print_cmd' with pid 2928
+2025-03-05 19:11:15,270 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:30:52,465 INFO configuration reloaded (added: ['test_python_env', 'test_python_env_batch', 'test_python_env_cmd'] changed: [] removed: ['test_cmd'])
+2025-03-05 19:30:53,495 INFO process group removed: 'test_cmd'
+2025-03-05 19:30:54,007 INFO process group added: 'test_python_env'
+2025-03-05 19:30:54,522 INFO process group added: 'test_python_env_batch'
+2025-03-05 19:30:54,524 INFO spawnerr: can't find command 'python'
+2025-03-05 19:30:55,036 INFO process group added: 'test_python_env_cmd'
+2025-03-05 19:30:55,057 INFO Spawned: 'test_python_env_batch' with pid 13688
+2025-03-05 19:30:55,587 INFO Spawned: 'test_python_env_cmd' with pid 12852
+2025-03-05 19:30:55,589 WARN exited: test_python_env_batch (termination normal; not expected)
+2025-03-05 19:30:56,094 INFO spawnerr: can't find command 'python'
+2025-03-05 19:30:56,095 WARN exited: test_python_env_cmd (termination normal; not expected)
+2025-03-05 19:30:57,114 INFO Spawned: 'test_python_env_batch' with pid 11012
+2025-03-05 19:30:58,134 INFO success: test_python_env_batch entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:30:58,140 INFO Spawned: 'test_python_env_cmd' with pid 12580
+2025-03-05 19:30:58,142 INFO exited: test_python_env_batch (termination normal; expected)
+2025-03-05 19:30:59,159 INFO spawnerr: can't find command 'python'
+2025-03-05 19:30:59,160 INFO success: test_python_env_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:30:59,161 INFO exited: test_python_env_cmd (termination normal; expected)
+2025-03-05 19:31:03,233 INFO spawnerr: can't find command 'python'
+2025-03-05 19:31:03,233 INFO gave up: test_python_env entered FATAL state, too many start retries too quickly
+2025-03-05 19:33:22,078 INFO configuration reloaded (added: [] changed: ['test_python_env'] removed: [])
+2025-03-05 19:33:23,099 INFO process group removed: 'test_python_env'
+2025-03-05 19:33:23,614 INFO process group added: 'test_python_env'
+2025-03-05 19:33:24,128 INFO Spawned: 'test_python_env' with pid 12768
+2025-03-05 19:33:24,643 WARN exited: test_python_env (exit status 2; not expected)
+2025-03-05 19:33:26,694 INFO Spawned: 'test_python_env' with pid 9568
+2025-03-05 19:33:27,718 INFO success: test_python_env entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:33:27,720 WARN exited: test_python_env (exit status 2; not expected)
+2025-03-05 19:34:30,594 INFO configuration reloaded (added: [] changed: ['test_python_env'] removed: [])
+2025-03-05 19:34:31,607 INFO process group removed: 'test_python_env'
+2025-03-05 19:34:32,119 INFO process group added: 'test_python_env'
+2025-03-05 19:34:32,642 INFO Spawned: 'test_python_env' with pid 1500
+2025-03-05 19:34:33,144 WARN exited: test_python_env (termination normal; not expected)
+2025-03-05 19:34:35,189 INFO Spawned: 'test_python_env' with pid 13712
+2025-03-05 19:34:36,205 INFO success: test_python_env entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:34:36,208 INFO exited: test_python_env (termination normal; expected)
+2025-03-05 19:35:26,657 INFO Spawned: 'test_python_env' with pid 11516
+2025-03-05 19:35:27,168 WARN exited: test_python_env (termination normal; not expected)
+2025-03-05 19:35:28,702 INFO Spawned: 'test_python_env' with pid 13576
+2025-03-05 19:35:29,710 INFO success: test_python_env entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:35:29,711 INFO exited: test_python_env (termination normal; expected)
+2025-03-05 19:36:26,880 INFO waiting for test_echo to stop
+2025-03-05 19:36:26,880 INFO waiting for test_echo_args to stop
+2025-03-05 19:36:26,882 INFO waiting for test_echo_cmd to stop
+2025-03-05 19:36:26,882 INFO waiting for test_echo_space to stop
+2025-03-05 19:36:26,883 INFO waiting for rigol_dsa_monitor to stop
+2025-03-05 19:36:26,883 INFO waiting for rigol_dsa_monitor_cmd to stop
+2025-03-05 19:36:26,883 INFO waiting for test_python_print to stop
+2025-03-05 19:36:26,885 INFO waiting for test_python_print_cmd to stop
+2025-03-05 19:36:26,885 WARN stopped: test_python_print (exit status 1)
+2025-03-05 19:36:26,887 WARN stopped: test_python_print_cmd (exit status 1)
+2025-03-05 19:36:27,392 WARN stopped: test_echo (exit status 1)
+2025-03-05 19:36:27,393 WARN stopped: test_echo_args (exit status 1)
+2025-03-05 19:36:27,393 WARN stopped: test_echo_cmd (exit status 1)
+2025-03-05 19:36:27,393 WARN stopped: test_echo_space (exit status 1)
+2025-03-05 19:36:27,393 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-05 19:36:27,393 WARN stopped: rigol_dsa_monitor_cmd (exit status 1)
+2025-03-05 19:36:34,030 INFO Spawned: 'test_echo' with pid 5604
+2025-03-05 19:36:34,033 INFO Spawned: 'test_echo_args' with pid 13924
+2025-03-05 19:36:34,037 INFO Spawned: 'test_echo_cmd' with pid 10600
+2025-03-05 19:36:34,041 INFO Spawned: 'test_echo_space' with pid 9100
+2025-03-05 19:36:34,046 INFO Spawned: 'rigol_dsa_monitor' with pid 9312
+2025-03-05 19:36:34,051 INFO Spawned: 'rigol_dsa_monitor_cmd' with pid 3940
+2025-03-05 19:36:34,054 INFO Spawned: 'test_python_print' with pid 7136
+2025-03-05 19:36:34,060 INFO Spawned: 'test_python_print_cmd' with pid 9308
+2025-03-05 19:36:34,066 INFO Spawned: 'test_python_env_batch' with pid 11816
+2025-03-05 19:36:34,070 INFO Spawned: 'test_python_env_cmd' with pid 14276
+2025-03-05 19:36:34,085 INFO Spawned: 'test_python_env' with pid 8804
+2025-03-05 19:36:34,593 WARN exited: test_python_env_batch (termination normal; not expected)
+2025-03-05 19:36:34,594 WARN exited: test_python_env_cmd (termination normal; not expected)
+2025-03-05 19:36:34,595 WARN exited: test_python_env (termination normal; not expected)
+2025-03-05 19:36:35,100 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: test_echo_args entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: test_echo_space entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: rigol_dsa_monitor_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,101 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:35,102 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:36,133 INFO Spawned: 'test_python_env_batch' with pid 3112
+2025-03-05 19:36:36,136 INFO Spawned: 'test_python_env_cmd' with pid 1344
+2025-03-05 19:36:36,140 INFO Spawned: 'test_python_env' with pid 14200
+2025-03-05 19:36:37,156 INFO success: test_python_env_batch entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:37,156 INFO success: test_python_env_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:37,157 INFO success: test_python_env entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:36:37,158 INFO exited: test_python_env_batch (termination normal; expected)
+2025-03-05 19:36:37,159 INFO exited: test_python_env_cmd (termination normal; expected)
+2025-03-05 19:36:37,160 INFO exited: test_python_env (termination normal; expected)
+2025-03-05 19:47:22,388 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 19:47:22,891 INFO waiting for rigol_dsa_monitor to stop
+2025-03-05 19:47:23,407 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-05 19:47:24,428 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 19:47:24,944 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:47:25,469 INFO Spawned: 'rigol_dsa_monitor' with pid 12972
+2025-03-05 19:47:26,994 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:48:02,174 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: ['rigol_dsa_monitor_cmd'])
+2025-03-05 19:48:02,681 INFO waiting for rigol_dsa_monitor_cmd to stop
+2025-03-05 19:48:03,198 WARN stopped: rigol_dsa_monitor_cmd (exit status 1)
+2025-03-05 19:48:04,223 INFO process group removed: 'rigol_dsa_monitor_cmd'
+2025-03-05 19:48:04,727 INFO waiting for rigol_dsa_monitor to stop
+2025-03-05 19:48:05,241 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-05 19:48:06,265 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 19:48:06,778 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:48:07,296 INFO Spawned: 'rigol_dsa_monitor' with pid 12960
+2025-03-05 19:48:08,833 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:48:26,226 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 19:48:26,731 INFO waiting for rigol_dsa_monitor to stop
+2025-03-05 19:48:27,236 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-05 19:48:28,269 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 19:48:28,777 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:48:29,294 INFO spawnerr: can't find command 'C:\\Users\\srgang\\AppData\\Local\\Programs\\Python\\Python310\\python.exe c:\\Users\\srgang\\OneDrive\\Documents\\RIGOL Monitor\\RIGOL_DSA.py'
+2025-03-05 19:48:30,830 INFO spawnerr: can't find command 'C:\\Users\\srgang\\AppData\\Local\\Programs\\Python\\Python310\\python.exe c:\\Users\\srgang\\OneDrive\\Documents\\RIGOL Monitor\\RIGOL_DSA.py'
+2025-03-05 19:48:33,889 INFO spawnerr: can't find command 'C:\\Users\\srgang\\AppData\\Local\\Programs\\Python\\Python310\\python.exe c:\\Users\\srgang\\OneDrive\\Documents\\RIGOL Monitor\\RIGOL_DSA.py'
+2025-03-05 19:48:37,978 INFO spawnerr: can't find command 'C:\\Users\\srgang\\AppData\\Local\\Programs\\Python\\Python310\\python.exe c:\\Users\\srgang\\OneDrive\\Documents\\RIGOL Monitor\\RIGOL_DSA.py'
+2025-03-05 19:48:37,978 INFO gave up: rigol_dsa_monitor entered FATAL state, too many start retries too quickly
+2025-03-05 19:50:12,065 INFO configuration reloaded (added: [] changed: ['rigol_dsa_monitor'] removed: [])
+2025-03-05 19:50:13,089 INFO process group removed: 'rigol_dsa_monitor'
+2025-03-05 19:50:13,600 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:50:14,113 INFO Spawned: 'rigol_dsa_monitor' with pid 9824
+2025-03-05 19:50:15,643 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:04,061 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 19:57:04,061 INFO Included extra file "C:\supervisor\conf.d\test_echo.conf" during parsing
+2025-03-05 19:57:04,061 INFO Included extra file "C:\supervisor\conf.d\test_python.conf" during parsing
+2025-03-05 19:57:04,086 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:57:04,086 INFO process group added: 'test_echo'
+2025-03-05 19:57:04,086 INFO process group added: 'test_echo_args'
+2025-03-05 19:57:04,086 INFO process group added: 'test_echo_cmd'
+2025-03-05 19:57:04,086 INFO process group added: 'test_echo_space'
+2025-03-05 19:57:04,087 INFO process group added: 'test_python_env'
+2025-03-05 19:57:04,087 INFO process group added: 'test_python_env_batch'
+2025-03-05 19:57:04,087 INFO process group added: 'test_python_env_cmd'
+2025-03-05 19:57:04,087 INFO process group added: 'test_python_print'
+2025-03-05 19:57:04,087 INFO process group added: 'test_python_print_cmd'
+2025-03-05 19:57:04,098 INFO RPC interface 'supervisor' initialized
+2025-03-05 19:57:04,098 INFO RPC interface 'multivisor' initialized
+2025-03-05 19:57:04,098 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 19:57:04,099 INFO supervisord started with pid 5044
+2025-03-05 19:57:04,629 INFO Spawned: 'rigol_dsa_monitor' with pid 11464
+2025-03-05 19:57:04,636 INFO Spawned: 'test_echo' with pid 1784
+2025-03-05 19:57:04,647 INFO Spawned: 'test_echo_args' with pid 5976
+2025-03-05 19:57:04,658 INFO Spawned: 'test_echo_cmd' with pid 8360
+2025-03-05 19:57:04,668 INFO Spawned: 'test_echo_space' with pid 12192
+2025-03-05 19:57:04,677 INFO Spawned: 'test_python_env' with pid 11884
+2025-03-05 19:57:04,688 INFO Spawned: 'test_python_env_batch' with pid 10484
+2025-03-05 19:57:04,699 INFO Spawned: 'test_python_env_cmd' with pid 12428
+2025-03-05 19:57:04,711 INFO Spawned: 'test_python_print' with pid 12556
+2025-03-05 19:57:04,721 INFO Spawned: 'test_python_print_cmd' with pid 12616
+2025-03-05 19:57:05,742 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,742 INFO success: test_echo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,742 INFO success: test_echo_args entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_echo_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_echo_space entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_python_env entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_python_env_batch entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_python_env_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,743 INFO success: test_python_print entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,744 INFO success: test_python_print_cmd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-05 19:57:05,752 INFO exited: test_python_env (termination normal; expected)
+2025-03-05 19:57:05,753 INFO exited: test_python_env_batch (termination normal; expected)
+2025-03-05 19:57:05,755 INFO exited: test_python_env_cmd (termination normal; expected)
+2025-03-05 19:58:29,979 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-03-05 19:58:29,993 INFO process group added: 'rigol_dsa_monitor'
+2025-03-05 19:58:30,003 INFO RPC interface 'supervisor' initialized
+2025-03-05 19:58:30,003 INFO RPC interface 'multivisor' initialized
+2025-03-05 19:58:30,003 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-03-05 19:58:30,004 INFO supervisord started with pid 7504
+2025-03-05 19:58:30,536 INFO Spawned: 'rigol_dsa_monitor' with pid 3240
+2025-03-05 19:58:31,550 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-10 14:40:01,462 INFO waiting for rigol_dsa_monitor to stop
+2025-03-10 14:40:02,404 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-10 14:40:03,611 INFO Spawned: 'rigol_dsa_monitor' with pid 14244
+2025-03-10 14:40:05,455 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-30 19:19:14,967 INFO waiting for rigol_dsa_monitor to stop
+2025-03-30 19:19:15,456 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-30 19:19:15,650 INFO Spawned: 'rigol_dsa_monitor' with pid 8036
+2025-03-30 19:19:17,496 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-30 19:23:23,563 INFO waiting for rigol_dsa_monitor to stop
+2025-03-30 19:23:23,927 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-30 19:23:24,013 INFO Spawned: 'rigol_dsa_monitor' with pid 10436
+2025-03-30 19:23:25,950 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-30 22:55:41,701 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-30 22:55:41,803 INFO Spawned: 'rigol_dsa_monitor' with pid 10804
+2025-03-30 22:55:43,721 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-03-31 14:33:23,426 INFO waiting for rigol_dsa_monitor to stop
+2025-03-31 14:33:24,220 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-03-31 14:33:24,320 INFO Spawned: 'rigol_dsa_monitor' with pid 3816
+2025-03-31 14:33:26,242 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-04 18:37:46,978 INFO waiting for rigol_dsa_monitor to stop
+2025-04-04 18:37:47,902 WARN stopped: rigol_dsa_monitor (exit status 1)
+2025-04-04 19:37:17,646 INFO Spawned: 'rigol_dsa_monitor' with pid 18404
+2025-04-04 19:37:19,094 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-07 19:24:14,435 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-04-07 19:24:14,465 INFO process group added: 'rigol_dsa_monitor'
+2025-04-07 19:24:14,475 INFO RPC interface 'supervisor' initialized
+2025-04-07 19:24:14,475 INFO RPC interface 'multivisor' initialized
+2025-04-07 19:24:14,475 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-04-07 19:24:14,475 INFO supervisord started with pid 6200
+2025-04-07 19:24:14,995 INFO Spawned: 'rigol_dsa_monitor' with pid 9848
+2025-04-07 19:24:16,010 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-04-07 19:28:21,609 INFO Included extra file "C:\supervisor\conf.d\rigol_rf_monitor.conf" during parsing
+2025-04-07 19:28:21,759 INFO process group added: 'rigol_dsa_monitor'
+2025-04-07 19:28:21,779 INFO RPC interface 'supervisor' initialized
+2025-04-07 19:28:21,779 INFO RPC interface 'multivisor' initialized
+2025-04-07 19:28:21,779 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2025-04-07 19:28:21,779 INFO supervisord started with pid 3180
+2025-04-07 19:28:22,302 INFO Spawned: 'rigol_dsa_monitor' with pid 2024
+2025-04-07 19:28:23,314 INFO success: rigol_dsa_monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
