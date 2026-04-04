@@ -298,26 +298,29 @@ sudo supervisorctl
 Test if `supervisor` can run in terminal:
 
 ```powershell
-uv run python -m supervisor.supervisorctl -c C:\supervisor\supervisord.conf status
+> uv run python -m supervisor.supervisorctl -c C:\supervisor\supervisord.conf status
 ```
 
 If it works fine, open a `powershell` with "**Run as Administrator**" and run the below:
 
 ```powershell
-uv run python -m supervisor.services install -c C:\supervisor\supervisord.conf
+> uv run python -m supervisor.services install -c C:\supervisor\supervisord.conf
 ```
 
-The Windows Service named "Supervisor Py3.11 process monitor" shoul be created.
-It can be managed in `Services` GUI (`services.msc`) or through the below `powershell` commands:
-
-TBD: need to ename automatic start
+The Windows Service named "Supervisor Py3.11 process monitor" shoul be created. Run the below to startup the service after boot.
 
 ```powershell
-Get-Service *Supervisor*
-Start-Service "Supervisor Pyv3.11"
-Get-Service "Supervisor Pyv3.11" | Select-Object Name, Status, StartType
-Restart-Service "Supervisor Pyv3.11"
-Stop-Service "Supervisor Pyv3.11"
+Set-Service -Name "Supervisor Pyv3.11" -StartupType Automatic
+```
+
+The service can be managed in `Services` GUI (`services.msc`) or through the below `powershell` commands:
+
+```powershell
+> Get-Service *Supervisor*
+> Start-Service "Supervisor Pyv3.11"
+> Get-Service "Supervisor Pyv3.11" | Select-Object Name, Status, StartType
+> Restart-Service "Supervisor Pyv3.11"
+> Stop-Service "Supervisor Pyv3.11"
 ```
 
 Go to `http://localhost:9001` in a web browser and see if the web control page shows up. Type username and password set under `[inet_http_server]` in `C:\supervisor\supervisor.conf` file.
@@ -333,7 +336,7 @@ Open Windows Defender firewall. Then go to Advanced settings --(new window)--> I
 Install `multivisor[rpc]` package in the `supervisor`'s folder installed above.
 
 ```bash
-uv add "multivisor[rpc]==6.0.1"
+> uv add "multivisor[rpc]==6.0.1"
 ```
 
 > **NOTE**: As of 2026/04/03, multivisor[rpc]==6.0.2 or 6.0.3 (latest) contain onlylinux dependency; see [here](https://github.com/tiagocoutinho/multivisor/issues/101)
@@ -341,7 +344,7 @@ uv add "multivisor[rpc]==6.0.1"
 Test if `multivisor[rpc]` has been installed and can be properly called.
 
 ```bash
-$ uv run python -c "from multivisor.rpc import make_rpc_interface; print('RPC import OK')"
+> uv run python -c "from multivisor.rpc import make_rpc_interface; print('RPC import OK')"
 RPC import OK
 ```
 
@@ -356,7 +359,7 @@ bind=\*:9002
 Restart `Supervisor Pyv3.11` Windows Service to load the new configuration.
 
 ```bash
-Restart-Service "Supervisor Pyv3.11"
+> Restart-Service "Supervisor Pyv3.11"
 ```
 
 ### 6. Adding apps in `supervisor-win`
