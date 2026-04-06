@@ -182,7 +182,7 @@ $ sudo chmod -R g+rwx /etc/supervisor
 Verify the change:
 
 ```bash
-$ ls -l /etc | grep supervisor
+$ ls -ld /etc/supervisor
 drwxrwxr--  <number>  root  users   ...<some text>...   supervisor
 ```
 
