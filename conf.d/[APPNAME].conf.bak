@@ -1,0 +1,16 @@
+; Supervisor config file to run python script
+; copy this file into /etc/supervisor/conf.d/ folder
+
+; `[APPNAME]` and `<APPNAME>` will be the name of this app in supervisor
+; Replace them in the name of this file and the `program` section header below
+; The example `command=` input below assumes that the app is in `%USERPROFILE5\Project\<APPNAME>\` folder and to be started by runninng `Startup.ps1` in Powershell
+
+[program:<APPNAME>] 
+command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%(ENV_USERPROFILE)s\Projects\<APPNAME>\Startup.ps1"
+process_name=%(program_name)s
+autostart=true
+startsec=3
+startretries=3
+autorestart=false
+stdout_logfile=%(here)s\logs\%(program_name)s_out.log
+stderr_logfile=%(here)s\logs\%(program_name)s_err.log

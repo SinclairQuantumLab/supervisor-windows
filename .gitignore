@@ -1,1 +1,30 @@
+# >>>>> supervisor >>>>>
+
+# configuration files
+*.conf
+# log files
+logs/*
+conf.d/logs/*
+*.log
+# others
+*.pid
+
+
+# <<<<< supervisor <<<<<
+
+# AGENT files
 .codex/*.local.md
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+
