@@ -13,7 +13,7 @@ conf.d/logs/*
 # <<<<< supervisor <<<<<
 
 # AGENT files
-.codex/*.local.md
+.agent/*.local.md
 
 # Python-generated files
 __pycache__/

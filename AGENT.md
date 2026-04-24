@@ -23,37 +23,38 @@
 - `python/Startup.ps1`: Windows launcher helper.
 - `python/supervisor/supervisor_helper.py`: shared Python logging helper.
 - `kill_supervisord_service.bat`: root-level inherited helper script.
+- `.agent/AGENT.local.md`: optional local-only notes for the current machine, worktree, or thread.
 
 ## Context handoff policy
 
 - `AGENT.md` is the durable, tracked source of truth for repo purpose, boundaries, and workflow rules.
-- `.codex/PROJECT_STATE.md` is the durable, tracked snapshot of current repository state, important cautions, and active phase.
-- `.codex/DECISIONS.md` is the durable, tracked record of locked decisions and non-obvious constraints.
-- `.codex/SESSION.md` is the durable, tracked milestone log for major repository events.
-- `.codex/NEXT-STEPS.md` is the durable, tracked resumption checklist and next-action queue.
-- `.codex/*.local.md` is reserved for machine-specific, worktree-specific, or thread-specific notes that should not be committed.
-- Durable handoff context should live in tracked `.codex/*.md` files; only true local notes should be ignored.
+- This repository does not use tracked `.agent/*.md` handoff files.
+- `.agent/*.local.md` is optional and reserved for machine-specific, worktree-specific, or thread-specific notes that should not be committed.
+- Do not assume any `.agent/*.md` file exists other than `AGENT.md` and optional `.local.md` notes.
 
 ## Required agent workflow
 
 - At the start of work, read `AGENT.md` first.
-- Then read `.codex/PROJECT_STATE.md`, `.codex/DECISIONS.md`, `.codex/SESSION.md`, and `.codex/NEXT-STEPS.md`.
-- If relevant local notes exist, read `.codex/*.local.md` before making new assumptions.
-- When durable repo state or decisions change, update the tracked `.codex/*.md` files before finishing.
-- When temporary machine/worktree/thread context matters, write it under `.codex/*.local.md`.
+- If relevant local notes exist, read `.agent/*.local.md` before making new assumptions.
+- When temporary machine/worktree/thread context matters, write it under `.agent/*.local.md`.
+- Do not expect, read, or create tracked `.agent/*.md` handoff files unless the user explicitly asks for them.
 - Keep `AGENT.md` stable. Update it only for durable rules, durable structure changes, or durable project-state milestones.
 
 ## Working rules
 
 - Treat this repository as a usage/support repository for `supervisor-win`, not as the upstream project.
 - Prefer minimal, explicit edits over broad cleanup.
+- `README.md` is for hands-on introduction, setup instructions, usage guidance, and other content that helps a normal user apply this repository immediately.
+- Do not use `README.md` as a place for developer notes, issue-history notes, debugging notes, or reassuring explanations aimed at maintainers. If a rare developer-facing note truly belongs in the repository, keep it in a `Developer's note` section at the bottom.
 - If you need Linux comparison while working on Windows material, use `C:\Users\Joon\Projects\supervisor-linux`.
-- If a future task starts real post-split development, keep the split-history constraints in mind and record the new phase in `AGENT.md`, `.codex/PROJECT_STATE.md`, and `.codex/SESSION.md`.
+- The repository root does not contain a live `logs/` directory. References to `logs` in docs and templates describe deployed supervisor directories such as `C:\supervisor\logs`, not folders that must exist inside this repo.
+- If Codex Desktop or the VS Code Codex sidebar shows stale session `Last updated` metadata for this thread, check `.agent/AGENT.local.md` before assuming the repository or thread state is actually stale.
+- If a future task starts real post-split development, record durable workflow changes in `AGENT.md` unless the user explicitly asks for a different handoff structure.
 
 ## Current status
 
 - Windows split is complete.
 - Git has been initialized in `C:\Users\Joon\Projects\supervisor-windows` and connected to the GitHub remote.
 - The mixed `supervisor-setting` source folder has been removed from this repository.
-- Durable handoff context now lives in tracked files under `.codex/`; only `.local.md` notes are ignored.
+- This repository intentionally keeps `.agent` minimal; only optional `.local.md` notes may exist there.
 - No post-split feature development has started yet.
