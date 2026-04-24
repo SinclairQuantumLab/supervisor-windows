@@ -1,0 +1,21 @@
+; Supervisor config file to run python script
+; copy this file into /etc/supervisor/conf.d/ folder
+; Refer to https://supervisord.org/configuration.html#program-x-section-settings and 
+; https://supervisord.org/configuration.html#group-x-section-settings for detail
+;   - Some of the configuration items in the `supervisor` are not implemented
+;     in `supervisor-win` and should be added in trial-and-error manner
+
+; `[APPNAME]` and `<APPNAME>` will be the name of this app in supervisor
+; Replace them in the name of this file and the `program` section header below
+; The example below assumes that the app is in `%USERPROFILE%\Projects\<APPNAME>\` folder and to be started by runninng `Startup.ps1` in Powershell
+
+[program:<APPNAME>] 
+command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%(ENV_USERPROFILE)s\Projects\%(program_name)s\Startup.ps1"
+directory="%(ENV_USERPROFILE)s\Projects\%(program_name)s"
+process_name=%(program_name)s
+autostart=true
+startsecs=3
+startretries=3
+autorestart=false
+stdout_logfile=%(here)s\logs\%(program_name)s_out.log
+stderr_logfile=%(here)s\logs\%(program_name)s_err.log

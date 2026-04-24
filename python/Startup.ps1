@@ -8,7 +8,7 @@ $pyPath = ".\main.py"
 
 # move working directory to the project folder
 Write-Host ">>> cd to the project directory..."
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$scriptDir = $PSScriptRoot
 Set-Location $scriptDir
 Write-Host "<<< Working directory set to: $PWD"
 Write-Host ""

@@ -9,7 +9,7 @@ $cmdArgs = @("-c", ".\supervisord.conf")
 
 # move working directory to the project folder
 Write-Host ">>> cd to the project directory..."
-$projectDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$projectDir = $PSScriptRoot
 Set-Location $projectDir
 Write-Host "<<< Working directory set to: $PWD"
 Write-Host ""

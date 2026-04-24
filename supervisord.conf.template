@@ -1,4 +1,7 @@
 ; supervisor-win config file.
+; Refer to https://supervisord.org/configuration.html for detail
+;   - Some of the configuration items in the `supervisor` are not implemented
+;     in `supervisor-win` and should be added in trial-and-error manner
 
 [inet_http_server]                  ; inet (TCP) server disabled by default
 port=localhost:9001                 ; ip_address:port specifier, *:port for all iface
@@ -16,7 +19,9 @@ childlogdir=%(here)s\logs      ; ('AUTO' child log dir, default $TEMP)
 
 ; environment variables to be delivered to processors
 environment=PYTHONUNBUFFERED=1 
+directory=%(here)s
 ; PYTHONUNBUFFERED=1: let stdout logged in real time for python app
+; directory: set supervisord's working directory to the folder containing this config
 
 ; The rpcinterface:supervisor section must remain in the config file for
 ; RPC (supervisorctl/web interface) to work.  Additional interfaces may be
