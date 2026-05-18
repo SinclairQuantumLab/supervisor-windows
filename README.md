@@ -1,181 +1,315 @@
-# supervisor-windows
+# `supervisor` in Windows
+
+This repo contains a `uv` project and templates to run [`supervisor-win`](https://pypi.org/project/supervisor-win/) on Windows.
+
 
 ## Table of Contents
 
-1. [Setting up in Windows](#setting-up-in-windows)
-2. [Managing processes](#managing-processes)
+1. [How to use `supervisor`](#how-to-use-supervisor)
+2. [Adding an app to `supervisor`](#adding-an-app-to-supervisor)
+3. [Quick installation with `uv`](#quick-installation-with-uv)
+4. [One-shot setup script](#one-shot-setup-script)
+5. [Task Scheduler GUI setup](#task-scheduler-gui-setup)
+6. [Uninstalling `supervisor`](#uninstalling-supervisor)
+7. [Remove an old Windows Service install](#remove-an-old-windows-service-install)
+8. [Developer's note](#developers-note)
 
-## Setting up in Windows
+## How to use `supervisor`
 
-### 1. Install `supervisor-win` in a virtual environment
+### Startup `supervisor`
 
-Create the folder where you want to install `supervisor-win` (recommended: `%USERPROFILE%/Projects/supervisord-win/`) and run the below commandline in `powershell` terminal:
+The `supervisor` task in Windows Task Scheduler should run automatically after starting up the computer and logging into the Windows account.
 
-```powershell
-> uv init --python 3.11
-> uv add "supervisor-win==4.7.0"
-```
+To startup `supervisor` task manually, run the commandline below in a Powershell terminal to startup `supervisord` installed as a task in Windows Task Scheduler:
 
-> **NOTE**: As of 2026/03/08, `python==3.11` works with `supervisor-win==4.3.0`.
+   ```powershell
+   Start-ScheduledTask -TaskName "supervisor"
+   ```
 
-It already setup a virtual Python environment and installed `supervisor`. How easy!
-Make sure the core executable files for `supervisor` exists:
+### Monitoring & Managing processes
 
-```powershell
-# in the folder that supervisor has been installed:
-> ls .\.venv\Scripts\
-```
+There are Web UI and CLI to monitor and manage the processes registered in `supervisor`.
+They will requires logging in; use the `username` and `password` set in the `[inet_http_server]` section in `supervisord.conf` file.
 
-There should be two files:
+#### Web UI
 
-- `supervisorctl.exe`: a command to control `supervisor'`. i.e., a CLI interface of `supervisor`.
-- `supervisord.exe`: main app of `supervisor` to be installed as a Windows Service.
+Open `http://localhost:9001` in a browser to use the Supervisor web UI and it will show the statuses of the registered processes and control them.
 
-`supervisorctl` can be tested running:
+[`multivisor`](https://github.com/SinclairQuantumLab/multivisor-web.git) provides a nice centeralized monitoring and control Web dashboard if the `supervisor` is setup for it (see the relevant step in [Quick installation with uv](#quick-installation-with-uv) section) and registered to a `multivisor` server.
 
-```powershell
-> .\.venv\Scripts\supervisorctl.exe
-http://localhost:9001 refused connection
-supervisor>
-```
+#### CLI
 
-Entering `exit` will let you go back to powershell prompt.
-
-### 2. Configure `supervisor-win`
-
-Download `\windows\supervisor\` in the repo and copy the `supervisor` folder into the `C:\` folder in the computer in which you want to install `supervisor`.
-
-Make sure the `supervisor` folder contains all of the below:
-
-- `conf.d` folder
-- `logs` folder
-- `supervisord.conf.template.conf.windows` file
-
-Change `supervisord.conf.template.conf.windows` file's name to `supervisord.conf` (i.e., drop the `.template.conf.windows` extension), open the file and update the password at `<PASSWORD>` placeholder (and save it).
-
-<!-- ### 3. Create a Symlink
-
-Make a symlink for `supervisorctl` in conda to the local `PATH` (so you can run `supervisorctl` globally just by typing it):
+In a Powershell terminal, run:
 
 ```powershell
-# replace <VENVPATH> below with the path used in the last step
-$ sudo ln -s <VENVPATH>/bin/supervisorctl /usr/local/bin/supervisorctl
+supervisorctl -u "<USERNAME>" -p "<PASSWORD>"
 ```
 
-For example, if `supervisor` was installed in `~/Projects/supervisord/`,
-`<VENVPATH>` should be replaced by `/home/<USERNAME>/Projects/supervisord/.venv/`.
-
-> **NOTE**: command `ln` doesn't work with relative path.
-
-It allows to call `supervisorctl` by just with the `supervisorctl` command in terminal
+One can ether establish a supervisor control session with `supervisor>` prompt without `[option]` listed below, or directly call the below `supervisorctl` commands without getting into the `supervisor` session as like the example below:
 
 ```powershell
-sudo supervisorctl
-``` -->
+supervisorctl -u "<USERNAME>" -p "<PASSWORD>" status
+```
 
-### 3. Install `supervisord` as a Windows Service
+##### `supervisorctl` commands
 
-Test if `supervisor` can run in terminal:
+Check the statuses of registered processes:
 
 ```powershell
-> uv run python -m supervisor.supervisorctl -c C:\supervisor\supervisord.conf status
+supervisor> status
 ```
 
-If it works fine, open a `powershell` with "**Run as Administrator**" and run the below:
+Start, stop, or restart one app:
 
 ```powershell
-> uv run python -m supervisor.services install -c C:\supervisor\supervisord.conf
+supervisor> start myapp
+supervisor> stop myapp
+supervisor> restart myapp
 ```
 
-The Windows Service named "Supervisor Py3.11 process monitor" shoul be created. Run the below to startup the service after boot.
+### Shutdown `supervisor`
+
+   ```powershell
+   Stop-ScheduledTask -TaskName "supervisor"
+   ```
+
+   > **NOTE**: `supervisorctl`'s `shutdown` command doesn't work in `supervisor-win==4.7.0`.
+
+## Adding an app to `supervisor`
+
+1. Copy the app config template in `%USERPROFILE%\Projects\supervisor\conf.d\` folder:
+
+   ```powershell
+   cd $HOME\Projects\supervisor
+   Copy-Item -LiteralPath ".\conf.d\[APPNAME].conf.template" -Destination ".\conf.d\<APPNAME>.conf"
+   ```
+
+   Replace: `<APPNAME>` with the name of the app in `supervisor`.
+
+2. Edit the `.conf` above.
+
+   Replace:
+
+   - `<APPNAME>` with the Supervisor app name
+   - `command=` with the real app startup command
+
+      For a Python app, 
+      1. copy the `python\Startup.ps1` in the app project folder and configure it; Espcially, update the location to the python script file to run in `$pyPath` variable.
+      2. In the `.conf` file, set the below:
+      ```
+      command="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File "%(ENV_USERPROFILE)s\Projects\%(program_name)s\Startup.ps1"
+      ```
+      In `supervisor`, `%(ENV_USERPROFILE)s` and `%(program_name)s` refer to the `%USERPROFILE` and the app's name set in the `.conf` file.
+
+   Add further configuration item found in https://supervisord.org/configuration.html#program-x-section-settings or https://supervisord.org/configuration.html#group-x-section-settings as needed.
+
+   > **NOTE**: Some of the configuration items in the `supervisor` are not implemented
+;     in `supervisor-win` and should be added in trial-and-error manner.
+
+3. Update `supervisor` with the new `.conf` file (see [CLI](#cli) section above):
+
+   ```powershell
+   supervisorctl -u "<USERNAME>" -p "<PASSWORD>" update
+   ```
+
+   Check if the new app appears in `supervisor` interface; see [Monitoring & Managing processes](#monitoring--managing-processes)
+
+## Quick installation with `uv`
+
+If this computer already has an old `supervisor-win` installed as a Windows Service, remove it first. See [Remove an old Windows Service install](#remove-an-old-windows-service-install) section.
+
+1. If `uv` has not been installed, do it following [the official installation guide](https://docs.astral.sh/uv/getting-started/installation/).
+   **Close and reopen PowerShell after installing `uv`**.
+
+2. Open PowerShell and clone this repo in `%USERPROFILE\Projects\` folder:
+
+   ```powershell
+   cd $HOME\Projects
+   git clone https://github.com/SinclairQuantumLab/supervisor-windows.git supervisor
+   ```
+
+3. Go to the created folder and run `uv sync`:
+
+   ```powershell
+   cd supervisor
+   uv sync
+   ```
+
+4. Make `supervisorctl` available from PowerShell.
+
+   ```powershell
+   Start-Process powershell -Verb RunAs -ArgumentList '-NoExit -ExecutionPolicy Bypass -Command New-Item -ItemType SymbolicLink -Path $HOME\.local\bin\supervisorctl.exe -Target $HOME\Projects\supervisor\.venv\Scripts\supervisorctl.exe -Force'
+   ```
+
+   > **NOTE**: This opens a separate Administrator PowerShell window to create a symlink.
+
+5. Create the `supervisord` config file from the template:
+
+   ```powershell
+   Copy-Item .\supervisord.conf.template .\supervisord.conf
+   ```
+
+6. Open `supervisord.conf` file and replace the `<PASSWORD>` placeholder with our usual password.
+
+7. Register `supervisord` as a Task Scheduler task for the current user. This opens a separate Administrator PowerShell window for Task Scheduler setup:
+
+   ```powershell
+   Start-Process powershell -Verb RunAs -ArgumentList '-NoExit -ExecutionPolicy Bypass -Command cd $HOME\Projects\supervisor; powershell -ExecutionPolicy Bypass -File .\mount-supervisord-task-scheduler.ps1'
+   ```
+
+   This creates a Task Scheduler task named `supervisor`.
+
+8. (Optional) regiser the installed `supervisor` to `multivisor`.
+
+   ```powershell
+   uv run python -c "from multivisor.rpc import make_rpc_interface; print('RPC import OK')"
+   ```
+
+   If using Multivisor, confirm the `[rpcinterface:multivisor]` section in `supervisord.conf` and open the required firewall port for the environment.
+
+That's it. `supervisord` should now start automatically when this Windows user logs in.
+
+## One-shot setup script
+
+Copy and paste the below script to PowerShell opened with **Run as Administrator**.
 
 ```powershell
-Set-Service -Name "Supervisor Pyv3.11" -StartupType Automatic
+# install supervisor-windows in %%
+cd "$HOME\Projects"
+git clone https://github.com/SinclairQuantumLab/supervisor-windows.git supervisor
+cd supervisor
+uv sync
+# create symbolic link for supervisorctl.exe in user `bin` folder
+New-Item -ItemType SymbolicLink -Path "$HOME\.local\bin\supervisorctl.exe" -Target "$HOME\Projects\supervisor\.venv\Scripts\supervisorctl.exe" -Force
+# create `supervisord.conf` file from the template
+Copy-Item .\supervisord.conf.template .\supervisord.conf -Force
+# create `supervisor` task in Windows Task Scheduler to run supervisord.exe
+powershell -ExecutionPolicy Bypass -File .\mount-supervisord-task-scheduler.ps1
 ```
 
-The service can be managed in `Services` GUI (`services.msc`) or through the below `powershell` commands:
+**Make sure to replace the `<PASSWORD>` placeholder with our usual password in the `supervisord.conf` file.**
+
+## Task Scheduler GUI setup
+
+While the PowerShell script in [Quick installation with uv](#quick-installation-with-uv) provides a quick way to setup `supervisor` task, the GUI of Windows Task Schedular is also useful because it shows the Windows settings directly.
+
+1. Open Task Scheduler: Run (Win+R) -> taskschd.msc
+
+2. Click **Create Task...**.
+
+3. In the **General** tab:
+
+   - Name: `supervisor`
+   - User account: the Windows desktop user
+   - Select **Run only when user is logged on**
+   - Select **Run with highest privileges**
+
+4. In the **Triggers** tab:
+
+   - Click **New...**
+   - Begin the task: **At log on**
+   - Specific user: the same Windows desktop user
+
+5. In the **Actions** tab:
+
+   - Click **New...**
+   - Action: **Start a program**
+   - Program/script:
+
+     ```powershell
+     powershell.exe
+     ```
+
+   - Add arguments:
+
+     ```powershell
+     -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Users\<USERNAME>\Projects\supervisor\Startup_supervisord.ps1"
+     ```
+
+   - Start in:
+
+     ```powershell
+     C:\Users\<USERNAME>\Projects\supervisor
+     ```
+
+6. In the **Conditions** tab:
+
+   - Disable power restrictions if the task should run on battery.
+   - Keep network conditions only if the supervised apps need network availability before startup.
+
+7. In the **Settings** tab:
+
+   - Enable **Allow task to be run on demand**
+   - Enable **Run task as soon as possible after a scheduled start is missed**
+   - Optionally enable restart on failure
+
+8. Right-click the task and click **Run**.
+
+## Uninstalling `supervisor`
+
+You many need to open a PowerShell terminal with **Run as Administrator** for some of the steps below.
+
+1. [Shutdown running `supervisor` instance](#shutdown-supervisor), if any.
+2. Delete `supervisor` task created in Windows Task Scheduler in its GUI or, equivalently, by running:
+
+   ```powershell
+   Unregister-ScheduledTask -TaskName "supervisor" -Confirm:$false
+   ```
+
+3. Remove `supervisor` project folder:
+
+   ```powershell
+   Remove-Item -Recurse -Force "$HOME\Projects\supervisor"
+   ```
+
+4. Remove the symlink to `supervisorctl.exe` in the user bin folder:
+
+   ```powershell
+   Remove-Item -Force "$HOME\.local\bin\supervisorctl.exe"
+   ```
+
+## Remove an old Windows Service install
+
+Use this only if the computer already has `supervisord` installed as a Windows Service.
+
+Open PowerShell with **Run as Administrator** for this section.
+
+Check the old service `Name`:
 
 ```powershell
-> Get-Service *Supervisor*
-> Start-Service "Supervisor Pyv3.11"
-> Get-Service "Supervisor Pyv3.11" | Select-Object Name, Status, StartType
-> Restart-Service "Supervisor Pyv3.11"
-> Stop-Service "Supervisor Pyv3.11"
+Get-Service *Supervisor*
 ```
 
-Go to `http://localhost:9001` in a web browser and see if the web control page shows up. Type username and password set under `[inet_http_server]` in `C:\supervisor\supervisord.conf` file.
+Note the value from the `Name` column. In this example, the service name is `Supervisor Pyv3.11`.
 
-### 4. Configure Windows Defender Firewall
+Kill the process started by the old Windows Service:
 
-The below procedure opens the port 9002 for `multivisor-rpc` to talk to the `multivisor-web`:
-
-Open Windows Defender firewall. Then go to Advanced settings --(new window)--> Inbound Rules -> New Rule... --(new window)--> Port -> Choose "TCP" and "Specific local ports" option and input 9002 -> Choose "Allow the connection" option -> check all the checkboxes: "Domain", "Private", and "Public" -> Input multivisor-rpc as name -> Finish.
-
-### 5. Multivisor Integration (Optional)
-
-Install `multivisor[rpc]` package in the `supervisor`'s folder installed above.
-
-```bash
-> uv add "multivisor[rpc]==6.0.1"
+```powershell
+cd "$HOME\Projects\supervisor"
+powershell -ExecutionPolicy Bypass -File .\kill-service.ps1 "Supervisor Pyv3.11" -Yes
 ```
 
-> **NOTE**: As of 2026/04/03, multivisor[rpc]==6.0.2 or 6.0.3 (latest) contain onlylinux dependency; see [here](https://github.com/tiagocoutinho/multivisor/issues/101)
+Delete the old Windows Service:
 
-Test if `multivisor[rpc]` has been installed and can be properly called.
-
-```bash
-> uv run python -c "from multivisor.rpc import make_rpc_interface; print('RPC import OK')"
-RPC import OK
+```powershell
+sc.exe delete "Supervisor Pyv3.11"
 ```
-
-Then uncomment the below lines in `C:\supervisor\supervisord.conf` to connect the supervisor to multivisor:
-
-```ini
-[rpcinterface:multivisor]
-supervisor.rpcinterface_factory = multivisor.rpc:make_rpc_interface
-bind=\*:9002
-```
-
-Restart `Supervisor Pyv3.11` Windows Service to load the new configuration.
-
-```bash
-> Restart-Service "Supervisor Pyv3.11"
-```
-
-### 6. Adding apps in `supervisor-win`
-
-1. In the repo folder, use `\windows\supervisor\conf.d\[APPNAME].conf.template.windows.TBD` or, to run python scripts, `[APPNAME].conf.template.windows.python` to create `<APPNAME>.conf` files in the folder of an app you want to manage by `supervisor`.
-2. Edit the `<APPNAME>.conf` accordingly.
-3. Copy it to `C:\supervisor\conf.d\` folder. Keep the original copy in the app folder for bookkeeping and sharing purpose.
-
----
-
-## Managing processes
-
-### Configuring `<APPNAME>.conf` files further
-
-The `.conf` file for each program introduced above is just simple examples. More advanced features like restrat policy when apps fail or dependencies between apps can be setup in the configuration file. Find the full detail in the [official documentation](https://supervisord.org/configuration.html) with a particular focus on `[program:x]` and `[group:x]` Section Settings.
-
-### Running python scripts with `supervisor`
-
-#### Helper package
-
-`/python/supervisor/` contains package that may be necessary or useful to run python apps with `supervisor`. Copy the `supervisor/` folder into the project's folder and import, for instance, `supervisor_helper.py` module as below:
-
-```python
-from supervisor.supervisor_helper import *
-```
-
-For instance, `log()`, `log_error()`, and , `log_warn()` in `supervisor_helper.py` will be important in particular as `supervisor` display and log the `stdout` for normal output and `stderr` for errors separately.
-
-#### Launching script
-
-It will be convenient to use the Lauching script `Startup.ps1` in `/python/` folder here. Then call or execute the launching script in the `command=` section in `<APPNAME>.conf` files.
-In Windows, the `Startup.ps1` file should be called via `powershell`'s `-File` option; see `\windows\supervisor\conf.d\[APPNAME].conf.template.windows.python`.
-
-The default script file that the lauching scripts run is `main.py`. Update the script name assigned to `$pyPath` in `Startup.ps1` to run other script.
-
 
 ## Developer's note
 
-- This repository was split from [supervisor-setting](https://github.com/SinclairQuantumLab/supervisor-setting.git) at commit d1f44233a3bccc7364d7ea797976f2e0ddf3d9c7.
+- This repository was split from [supervisor-setting](https://github.com/SinclairQuantumLab/supervisor-setting.git) Github repo at commit d1f44233a3bccc7364d7ea797976f2e0ddf3d9c7.
+
+- The high-level flow of launching `supervisor` and registered apps:
+
+   > Task Scheduler -> Startup_supervisord.ps1 -> supervisord -> apps in conf.d/*.conf
+
+- Why moved from Windows Service to Task Scheduler to run `supervisord.exe`?
+
+   A normal Windows Service runs in Session 0. The logged-in user's desktop is usually Session 1 or higher.
+   Running `supervisord` from Task Scheduler at logon avoids the common problem where a service-launched GUI process is not part of the visible desktop session.
+   This matters when child programs may need:
+
+  - GUI windows
+  - the logged-in user's environment
+  - access to the visible desktop session
+  - behavior closer to a normal background desktop app
