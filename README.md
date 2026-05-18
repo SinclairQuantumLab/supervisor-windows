@@ -159,7 +159,24 @@ If this computer already has an old `supervisor-win` installed as a Windows Serv
 
    This creates a Task Scheduler task named `supervisor`.
 
-8. (Optional) regiser the installed `supervisor` to `multivisor`.
+8. Start the scheduled task and check that `supervisord` responds:
+
+   ```powershell
+   Start-ScheduledTask -TaskName "supervisor"
+   ```
+
+9. Test if `supervisor` runs successfully.
+   - In terminal:
+
+      ```powershell
+      supervisorctl -u admin -p "<PASSWORD>"
+      ```
+
+      `supervisor` is running if `supervisor>` prompt shows up.
+      Get out of the prompt by entering `exit`.
+   - Web UI: go to `http://localhost:9001` in a web browser and `supervisor` is running if it shows the control UI.
+
+10. (Optional) regiser the installed `supervisor` to `multivisor`.
 
    ```powershell
    uv run python -c "from multivisor.rpc import make_rpc_interface; print('RPC import OK')"
