@@ -93,7 +93,7 @@ supervisor> restart myapp
    - `<APPNAME>` with the Supervisor app name
    - `command=` with the real app startup command
 
-      For a Python app, 
+      For a Python app,
       1. copy the `python\Startup.ps1` in the app project folder and configure it; Espcially, update the location to the python script file to run in `$pyPath` variable.
       2. In the `.conf` file, set the below:
       ```

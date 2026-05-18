@@ -40,9 +40,9 @@ history_file=%(here)s\.sc_history
 
 ; To interface this supervisor with multivisor
 ; https://github.com/tiagocoutinho/multivisor
-[rpcinterface:multivisor]
-supervisor.rpcinterface_factory = multivisor.rpc:make_rpc_interface
-bind=*:9002
+; [rpcinterface:multivisor]
+; supervisor.rpcinterface_factory = multivisor.rpc:make_rpc_interface
+; bind=*:9002
 
 ; The [include] section can just contain the "files" setting.  This
 ; setting can list multiple files (separated by whitespace or
