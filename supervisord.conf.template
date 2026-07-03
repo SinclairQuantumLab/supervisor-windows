@@ -10,8 +10,8 @@ password=<PASSWORD> ; <--- UPDATE HERE!!   ; default is no password (open server
 
 [supervisord]
 logfile=%(here)s\logs\supervisord.log ; (main log file;default $CWD/supervisord.log)
-logfile_maxbytes=50MB               ; (max main logfile bytes b4 rotation;default 50MB)
-logfile_backups=10                  ; (num of main logfile rotation backups;default 10)
+logfile_maxbytes=10MB               ; (max main logfile bytes b4 rotation;default 50MB)
+logfile_backups=2                  ; (num of main logfile rotation backups;default 10)
 loglevel=info                       ; (log level;default info; others: debug,warn,trace)
 pidfile=%(here)s\supervisord.pid ; (supervisord pidfile;default supervisord.pid)
 childlogdir=%(here)s\logs      ; ('AUTO' child log dir, default $TEMP)
