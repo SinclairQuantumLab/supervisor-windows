@@ -1,4 +1,4 @@
-# AGENT.md
+# AGENTS.md
 
 ## Purpose
 
@@ -27,22 +27,22 @@
 - `mount-supervisord-task-scheduler.ps1`: Task Scheduler registration helper for running `supervisord` in the logged-in user's desktop session.
 - `kill-service.ps1`: generic helper that accepts an exact Windows Service `Name`, then kills the process started by that service. README explains how to use it for old `supervisor-win` service migration.
 - `windows/unsorted/`: inherited service-era helper scripts and test artifacts kept for reference.
-- `.agent/AGENT.local.md`: optional local-only notes for the current machine, worktree, or thread.
+- `.agents/AGENTS.local.md`: optional local-only notes for the current machine, worktree, or thread.
 
 ## Context handoff policy
 
-- `AGENT.md` is the durable, tracked source of truth for repo purpose, boundaries, and workflow rules.
-- This repository does not use tracked `.agent/*.md` handoff files.
-- `.agent/*.local.md` is optional and reserved for machine-specific, worktree-specific, or thread-specific notes that should not be committed.
-- Do not assume any `.agent/*.md` file exists other than `AGENT.md` and optional `.local.md` notes.
+- `AGENTS.md` is the durable, tracked source of truth for repo purpose, boundaries, and workflow rules.
+- This repository does not use tracked `.agents/*.md` handoff files.
+- `.agents/*.local.md` is optional and reserved for machine-specific, worktree-specific, or thread-specific notes that should not be committed.
+- Do not assume any `.agents/*.md` file exists; only the root `AGENTS.md` and optional `.agents/*.local.md` notes are expected.
 
 ## Required agent workflow
 
-- At the start of work, read `AGENT.md` first.
-- If relevant local notes exist, read `.agent/*.local.md` before making new assumptions.
-- When temporary machine/worktree/thread context matters, write it under `.agent/*.local.md`.
-- Do not expect, read, or create tracked `.agent/*.md` handoff files unless the user explicitly asks for them.
-- Keep `AGENT.md` stable. Update it only for durable rules, durable structure changes, or durable project-state milestones.
+- At the start of work, read `AGENTS.md` first.
+- If relevant local notes exist, read `.agents/*.local.md` before making new assumptions.
+- When temporary machine/worktree/thread context matters, write it under `.agents/*.local.md`.
+- Do not expect, read, or create tracked `.agents/*.md` handoff files unless the user explicitly asks for them.
+- Keep `AGENTS.md` stable. Update it only for durable rules, durable structure changes, or durable project-state milestones.
 
 ## Working rules
 
@@ -64,13 +64,13 @@
 - Also document the GUI Task Scheduler path, because Windows UI labels and PowerShell task syntax may drift over time.
 - If you need Linux comparison while working on Windows material, use `C:\Users\Joon\Projects\supervisor-linux`.
 - The repository intentionally keeps `logs/.gitignore` and `conf.d/logs/.gitignore` placeholders so log directories exist after clone while runtime log files stay untracked.
-- If Codex Desktop or the VS Code Codex sidebar shows stale session `Last updated` metadata for this thread, check `.agent/AGENT.local.md` before assuming the repository or thread state is actually stale.
-- If a future task starts real post-split development, record durable workflow changes in `AGENT.md` unless the user explicitly asks for a different handoff structure.
+- If Codex Desktop or the VS Code Codex sidebar shows stale session `Last updated` metadata for this thread, check `.agents/AGENTS.local.md` before assuming the repository or thread state is actually stale.
+- If a future task starts real post-split development, record durable workflow changes in `AGENTS.md` unless the user explicitly asks for a different handoff structure.
 
 ## Current status
 
 - Windows split is complete.
 - Git is currently checked out at `C:\Users\Joon\Projects\supervisor` and connected to the `supervisor-windows` GitHub remote.
 - The mixed `supervisor-setting` source folder has been removed from this repository.
-- This repository intentionally keeps `.agent` minimal; only optional `.local.md` notes may exist there.
+- This repository intentionally keeps `.agents` minimal; only optional `.local.md` notes may exist there.
 - Post-split development has started around the Task Scheduler user-session runtime model and the new README draft.
