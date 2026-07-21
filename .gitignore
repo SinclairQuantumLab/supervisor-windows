@@ -2,18 +2,20 @@
 
 # configuration files
 *.conf
+
 # log files
 logs/*
 conf.d/logs/*
 *.log
+
 # others
 *.pid
-
+.sc_history
 
 # <<<<< supervisor <<<<<
 
-# AGENT files
-.agent/*.local.md
+# Machine-, worktree-, or thread-specific agent notes
+.agents/*.local.md
 
 # Python-generated files
 __pycache__/
@@ -24,7 +26,5 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
-
-
-
+.venv/
+.uv-cache/
